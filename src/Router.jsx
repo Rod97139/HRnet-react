@@ -4,6 +4,9 @@ import {
     Outlet,
 } from 'react-router-dom';
 import Header from './components/layout/header/Header';
+import Home from './pages/home/Home';
+import EmployeeList from './pages/employee-list/EmployeeList';
+import NotFound from './pages/notFound/NotFound';
 
 const Router = () => {
     const AppLayout = () => (
