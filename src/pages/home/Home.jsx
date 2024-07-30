@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Home.scss';
+import ReactDatePicker from '../../components/home/reactDatePicker/ReactDatePicker';
+import DropDown from '../../components/home/dropDown/DropDown';
+import ReactModal from '../../components/home/reactModal/ReactModal';
+import { states } from '../../models/states';
 
 const Home = () => {
   return (
@@ -15,10 +19,10 @@ const Home = () => {
                 <input type="text" id="last-name" />
 
                 <label htmlFor="date-of-birth">Date of Birth</label>
-                <input id="date-of-birth" type="text" />
+                <ReactDatePicker />
 
                 <label htmlFor="start-date">Start Date</label>
-                <input id="start-date" type="text" />
+                  <ReactDatePicker/>
 
                 <fieldset className="address">
                     <legend>Address</legend>
@@ -30,24 +34,25 @@ const Home = () => {
                     <input id="city" type="text" />
 
                     <label htmlFor="state">State</label>
-                    <select name="state" id="state"></select>
+                    <DropDown name={"state"}
+                              content={states}
+                    />
 
                     <label htmlFor="zip-code">Zip Code</label>
                     <input id="zip-code" type="number" />
                 </fieldset>
 
                 <label htmlFor="department">Department</label>
-                <select name="department" id="department">
-                    <option>Sales</option>
-                    <option>Marketing</option>
-                    <option>Engineering</option>
-                    <option>Human Resources</option>
-                    <option>Legal</option>
-                </select>
+                <DropDown name={"department"} 
+                          content={["Sales", 
+                                    "Marketing", 
+                                    "Engineering", 
+                                    "Human Resources",
+                                    "Legal"]} />
             </form>
-            <button onclick="saveEmployee()">Save</button>
+            <button >Save</button>
       </div>
-        <div id="confirmation" className="modal">Employee Created!</div>
+        <ReactModal />
     </>
   )
 }
