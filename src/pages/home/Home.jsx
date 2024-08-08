@@ -34,9 +34,7 @@ const Home = () => {
                     <input id="city" type="text" />
 
                     <label htmlFor="state">State</label>
-                    <DropDown name={"state"}
-                              content={states}
-                    />
+                    <DropDown name={"state"} content={states}/>
 
                     <label htmlFor="zip-code">Zip Code</label>
                     <input id="zip-code" type="number" />

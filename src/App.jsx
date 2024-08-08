@@ -4,6 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Router from './Router'
 
-const App = () => <Router/>
+const App = () => {
+
+    return (
+        // <Provider store={store}>
+            <Router/>
+        // </Provider>
+    );
+}
 
 export default App
