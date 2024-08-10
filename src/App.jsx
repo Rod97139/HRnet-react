@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Provider } from 'react-redux';
 import './App.css'
 import Router from './Router'
+import store from './store'
 
 const App = () => {
 
     return (
-        // <Provider store={store}>
+        <Provider store={store}>
             <Router/>
-        // </Provider>
+        </Provider>
     );
 }
 
