@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { addEmployee } from '../../../slices/employeeSlice'
 import { useDispatch } from 'react-redux'
 
-const EmployeeForm = () => {
+const EmployeeForm = ({setShouldOpenModal}) => {
 
     const dispatch = useDispatch()
     
@@ -15,9 +15,9 @@ const EmployeeForm = () => {
     const [startDate, setStartDate] = useState(new Date().toLocaleDateString('en-EN'))
     const [street, setStreet] = useState('')
     const [city, setCity] = useState('')
-    const [state, setState] = useState('')
+    const [state, setState] = useState('AL')
     const [zipCode, setZipCode] = useState('')
-    const [department, setDepartment] = useState('')
+    const [department, setDepartment] = useState('Sales')
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -34,6 +34,9 @@ const EmployeeForm = () => {
                 zipCode
             }
             dispatch(addEmployee(data))
+            setShouldOpenModal(true)
+            e.target.reset()
+
         } catch (error) {
             console.log(error);
         }
@@ -41,14 +44,16 @@ const EmployeeForm = () => {
 
   return (
     <>
-        <form action="#" id="create-employee">
+        <form action="#" id="create-employee" onSubmit={
+                (e) => handleSubmit(e)
+            }>
             <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" 
+            <input type="text" id="first-name" required 
             onChange={(e) => setFirstName(e.target.value)}
             />
 
             <label htmlFor="last-name">Last Name</label>
-            <input type="text" id="last-name" 
+            <input type="text" id="last-name" required
             onChange={(e) => setLastName(e.target.value)}
             />
 
@@ -62,12 +67,12 @@ const EmployeeForm = () => {
                 <legend>Address</legend>
 
                 <label htmlFor="street">Street</label>
-                <input id="street" type="text" 
+                <input id="street" type="text" required
                 onChange={(e) => setStreet(e.target.value)}
                 />
 
                 <label htmlFor="city">City</label>
-                <input id="city" type="text" 
+                <input id="city" type="text" required
                 onChange={(e) => setCity(e.target.value)}
                 />
 
@@ -76,7 +81,7 @@ const EmployeeForm = () => {
                 />
 
                 <label htmlFor="zip-code">Zip Code</label>
-                <input id="zip-code" type="number" 
+                <input id="zip-code" type="number" required
                 onChange={(e) => setZipCode(e.target.value)}
                 />
             </fieldset>
@@ -90,10 +95,8 @@ const EmployeeForm = () => {
                                 "Legal"]} 
                       setInput={setDepartment}
             />
+            <button type='submit'>Save</button>
         </form>
-        <button onClick={
-            (e) => handleSubmit(e)
-        } >Save</button>
     </>
   )
 }

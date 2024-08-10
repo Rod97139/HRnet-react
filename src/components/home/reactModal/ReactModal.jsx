@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 
 
 
-const ReactModal = () => {
+const ReactModal = ({shouldOpenModal, setShouldOpenModal}) => {
+
     const customStyles = {
         content: {
           top: '50%',
@@ -17,7 +18,7 @@ const ReactModal = () => {
       
     Modal.setAppElement('#root');
 
-    let subtitle;
+    // let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
 
     const openModal = () => {
@@ -26,16 +27,23 @@ const ReactModal = () => {
 
     const afterOpenModal = () => {
         // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
+        // subtitle.style.color = '#f00';
     }
 
     const closeModal = () => {
         setIsOpen(false);
+        setShouldOpenModal(false)
     }
+
+    useEffect(() => {
+        if(shouldOpenModal){
+            openModal()
+        }
+
+    }, [shouldOpenModal])
 
   return (
     <div>
-        <button onClick={openModal}>Open Modal</button>
         <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -43,16 +51,9 @@ const ReactModal = () => {
         style={customStyles}
         contentLabel="Example Modal"
         >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-        </form>
+          {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
+          <div>Employé bien ajouté</div>
+          <button onClick={closeModal}>close</button>
         </Modal>
     </div>
   )

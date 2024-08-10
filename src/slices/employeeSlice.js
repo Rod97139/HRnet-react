@@ -6,8 +6,7 @@ const employeeList = localStorage.getItem('employees')
 
 export const employeeSlice = createSlice({
   name: 'employeeList',
-  initialState: employeeList
-  ,
+  initialState: employeeList,
   reducers: {
     addEmployee: (currentState, action) => {
         const listWithNewEmployee = [...currentState, action.payload]
