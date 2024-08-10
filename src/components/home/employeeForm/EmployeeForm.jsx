@@ -3,13 +3,16 @@ import DropDown from '../dropDown/DropDown'
 import { states } from '../../../models/states'
 import { useState } from 'react'
 import { addEmployee } from '../../../slices/employeeSlice'
+import { useDispatch } from 'react-redux'
 
 const EmployeeForm = () => {
+
+    const dispatch = useDispatch()
     
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
-    const [dateOfBirth, setDateOfBirth] = useState('')
-    const [startDate, setStartDate] = useState('')
+    const [dateOfBirth, setDateOfBirth] = useState(new Date().toLocaleDateString('en-EN'))
+    const [startDate, setStartDate] = useState(new Date().toLocaleDateString('en-EN'))
     const [street, setStreet] = useState('')
     const [city, setCity] = useState('')
     const [state, setState] = useState('')
@@ -24,11 +27,11 @@ const EmployeeForm = () => {
                 lastName,
                 dateOfBirth,
                 startDate,
+                department,
                 street,
                 city,
                 state,
-                zipCode,
-                department
+                zipCode
             }
             dispatch(addEmployee(data))
         } catch (error) {
@@ -88,7 +91,9 @@ const EmployeeForm = () => {
                       setInput={setDepartment}
             />
         </form>
-        <button >Save</button>
+        <button onClick={
+            (e) => handleSubmit(e)
+        } >Save</button>
     </>
   )
 }

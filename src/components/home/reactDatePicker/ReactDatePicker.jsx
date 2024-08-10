@@ -11,7 +11,7 @@ const ReactDatePicker = ({setInput}) => {
         selected={date}
         onChange={(newDate) => {
           setDate(newDate)
-          setInput(newDate)
+          setInput(newDate.toLocaleDateString('en-EN'))
         }}
     />
   )
