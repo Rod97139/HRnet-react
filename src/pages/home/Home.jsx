@@ -15,7 +15,7 @@ const Home = () => {
             <h2>Create Employee</h2>
             <EmployeeForm setShouldOpenModal={setShouldOpenModal}/> 
       </div>
-        <ReactModal shouldOpenModal={shouldOpenModal} setShouldOpenModal={setShouldOpenModal}/>
+      <ReactModal shouldOpenModal={shouldOpenModal} setShouldOpenModal={setShouldOpenModal}/>
     </>
   )
 }
