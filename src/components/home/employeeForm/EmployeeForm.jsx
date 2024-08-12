@@ -25,9 +25,9 @@ const EmployeeForm = ({setShouldOpenModal}) => {
             let data = {
                 firstName,
                 lastName,
-                dateOfBirth,
                 startDate,
                 department,
+                dateOfBirth,
                 street,
                 city,
                 state,
