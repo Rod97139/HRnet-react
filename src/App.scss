@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700');
-
+@font-face {
+    font-family: 'Edu';
+    src: url('assets/fonts/EduVICWANTBeginner-Medium.ttf') format("trueType");
+}
 body {
-    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-family: 'Edu', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
 }
 
 button, input, select, option {
-    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-family: 'Edu', sans-serif;
 }
 
 .react-datepicker__month-container {
-    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-family: 'Edu', sans-serif;
 }
 
 .title {
