@@ -1,0 +1,36 @@
+.home-icon {
+    width: 200px;
+}
+
+.header {
+    margin-inline: 50px;
+    margin-block: 30px;
+    border-bottom: #ebf0ec 1px solid;
+    .nav {
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .page-title {
+            
+            position: relative;
+            right: 30px;
+            
+        }
+        .active {
+            cursor: default;
+        }
+        .side-links {
+            display: flex;
+            flex-direction: column;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            .active {
+                color: #93ad18;
+            }
+
+        }
+    }
+}

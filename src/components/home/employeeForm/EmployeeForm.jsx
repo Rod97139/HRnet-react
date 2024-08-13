@@ -4,6 +4,7 @@ import { states } from '../../../models/states'
 import { useState } from 'react'
 import { addEmployee } from '../../../slices/employeeSlice'
 import { useDispatch } from 'react-redux'
+import './EmployeeForm.scss'
 
 const EmployeeForm = ({setShouldOpenModal}) => {
 
@@ -47,43 +48,56 @@ const EmployeeForm = ({setShouldOpenModal}) => {
         <form action="#" id="create-employee" onSubmit={
                 (e) => handleSubmit(e)
             }>
-            <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" required 
-            onChange={(e) => setFirstName(e.target.value)}
-            />
-
-            <label htmlFor="last-name">Last Name</label>
-            <input type="text" id="last-name" required
-            onChange={(e) => setLastName(e.target.value)}
-            />
-
-            <label htmlFor="date-of-birth">Date of Birth</label>
-            <ReactDatePicker setInput={setDateOfBirth} />
-
-            <label htmlFor="start-date">Start Date</label>
-                <ReactDatePicker setInput={setStartDate} />
-
+            <div className="form-row">
+                <div className='form-group'>
+                    <label htmlFor="first-name">First Name</label>
+                    <input className='input-name' type="text" id="first-name" required 
+                    onChange={(e) => setFirstName(e.target.value)}
+                    />
+                </div>
+                <div className='form-group'>
+                    <label htmlFor="last-name">Last Name</label>
+                    <input className='input-name' type="text" id="last-name" required
+                    onChange={(e) => setLastName(e.target.value)}
+                    />
+                </div>
+            </div>
+            <div className="form-row">
+                <div className='form-group'>
+                    <label htmlFor="date-of-birth">Date of Birth</label>
+                    <ReactDatePicker setInput={setDateOfBirth} />
+                </div>
+                <div className='form-group'>
+                    <label htmlFor="start-date">Start Date</label>
+                    <ReactDatePicker setInput={setStartDate} />
+                </div>
+            </div>
             <fieldset className="address">
                 <legend>Address</legend>
-
-                <label htmlFor="street">Street</label>
-                <input id="street" type="text" required
-                onChange={(e) => setStreet(e.target.value)}
-                />
-
-                <label htmlFor="city">City</label>
-                <input id="city" type="text" required
-                onChange={(e) => setCity(e.target.value)}
-                />
-
-                <label htmlFor="state">State</label>
-                <DropDown name={"state"} content={states} setInput={setState}
-                />
-
-                <label htmlFor="zip-code">Zip Code</label>
-                <input id="zip-code" type="number" required
-                onChange={(e) => setZipCode(e.target.value)}
-                />
+                <div className="form-row">
+                <div className='form-group'>
+                    <label htmlFor="street">Street</label>
+                    <input id="street" type="text" required
+                    onChange={(e) => setStreet(e.target.value)}
+                /></div>
+                <div className='form-group'>
+                    <label htmlFor="city">City</label>
+                    <input id="city" type="text" required
+                    onChange={(e) => setCity(e.target.value)}
+                /></div>
+                </div>
+                <div className='form-row'>
+                <div className='form-group'>
+                    <label htmlFor="state">State</label>
+                    <DropDown name={"state"} content={states} setInput={setState}
+                    />
+                </div>
+                <div className='form-group'>
+                    <label htmlFor="zip-code">Zip Code</label>
+                    <input id="zip-code" type="number" required
+                    onChange={(e) => setZipCode(e.target.value)}
+                /></div>
+                </div>
             </fieldset>
 
             <label htmlFor="department">Department</label>
