@@ -4,20 +4,32 @@
 
 .data-table-header > tr > .data-table-sorter.none::after {
     content: url('../../../assets/icons/8665859_sort_filter_icon.svg');
+    position: absolute;
     }
 
 .data-table-header > tr > .data-table-sorter.asc::after {
     content: url('../../../assets/icons/8665974_sort_up_icon.svg');
+    position: absolute;
     
 }
 
 .data-table-header > tr > .data-table-sorter.dsc::after {
     content: url('../../../assets/icons/8665844_sort_down_icon.svg');
+    position: absolute;
 }
 
 .data-table-paginate > .active {
     background-color: #93ad18;
     color: white;
+}
+
+.no-data-available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    color: #93ad18;
 }
 
 .data-table-container {
@@ -47,6 +59,11 @@
     }
     .data-table-wrapper {
         border: #93ad18 1px solid;
+        .data-table-header {
+            .data-table-sorter {
+                min-width: 130px;
+            }
+        }
     }
     .data-table-header {
         background-color: #93ad18;
@@ -58,5 +75,9 @@
 
     .data-table-body > tr:nth-child(odd) {
         background-color: #e6e6e6; // Couleur plus sombre pour les lignes impaires
+    }
+    .data-table-body td {
+        text-align: center; // Centrer le texte horizontalement dans les cellules
+        vertical-align: middle; // Centrer le texte verticalement dans les cellules
     }
 }

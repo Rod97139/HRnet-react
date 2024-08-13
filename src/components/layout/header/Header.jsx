@@ -15,8 +15,8 @@ const Header = () => {
                 </NavLink>
                 {
                     location.pathname === '/' ?
-                        <h1>Create Employee</h1> :
-                        <h1>Current Employees</h1>
+                        <h1 className="page-title">Create Employee</h1> :
+                        <h1 className="page-title">Current Employees</h1>
                 }
                 <div className="side-links">
                     <NavLink to ='/' >
