@@ -1,0 +1,21 @@
+.data-table-header > tr > .data-table-sorter {
+    cursor: pointer;
+}
+
+.data-table-header > tr > .data-table-sorter.none::after {
+    content: url('./8665859_sort_filter_icon.svg');
+    }
+
+.data-table-header > tr > .data-table-sorter.asc::after {
+    content: url('./8665974_sort_up_icon.svg');
+    
+}
+
+.data-table-header > tr > .data-table-sorter.dsc::after {
+    content: url('./8665844_sort_down_icon.svg');
+}
+
+.data-table-paginate > .active {
+    background-color: #007bff;
+    color: white;
+}
