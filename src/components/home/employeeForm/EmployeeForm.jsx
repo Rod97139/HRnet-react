@@ -109,7 +109,7 @@ const EmployeeForm = ({setShouldOpenModal}) => {
                                 "Legal"]} 
                       setInput={setDepartment}
             />
-            <button type='submit'>Save</button>
+            <button className='hr-btn' type='submit'>Save</button>
         </form>
     </>
   )
