@@ -1,0 +1,46 @@
+#create-employee {
+    margin-top: 20px;
+    // width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    fieldset {
+        width: 500px;
+        padding: 20px;
+        border: 1px solid #93ad18;
+        border-radius: 5px;
+    }
+    .dropdown-department {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 500px;
+
+        .form-group {
+            flex: 0 0 48%; // Chaque champ prend environ la moitié de la largeur de la ligne
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .input-name {
+                width: 192px;
+                height: 21px;
+            }
+        }
+    }
+    
+}
