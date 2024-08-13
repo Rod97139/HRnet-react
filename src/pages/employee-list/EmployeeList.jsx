@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import EmployeeTable from "../../components/employee-list/employeeTable.jsx/EmployeeTable"
+import EmployeeTable from "../../components/employee-list/employeeTable/EmployeeTable"
 
 const EmployeeList = () => {
   return (

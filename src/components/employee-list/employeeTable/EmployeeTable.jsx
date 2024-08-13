@@ -7,7 +7,7 @@ const EmployeeTable = () => {
     const employees = useSelector(getEmployeeList)
     
     return (
-        <ReactDataTable data={employees} />
+        <ReactDataTable data={employees} dateFormatKey={['dateOfBirth', 'startDate']} />
     )
 }
 
