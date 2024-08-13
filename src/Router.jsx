@@ -33,7 +33,11 @@ const Router = () => {
                 },
             ]
         },
-    ]);
+    ],
+        {
+        basename: '/HRnet-react',
+        }
+    );
 
     return (
         <RouterProvider router={router} />
