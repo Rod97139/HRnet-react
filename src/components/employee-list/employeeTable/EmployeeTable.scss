@@ -56,6 +56,11 @@
         display: flex;
         justify-content: center;
         margin-top: 10px;
+
+        & > button {
+            margin: 0 5px;
+            cursor: pointer;
+        }
     }
     .data-table-wrapper {
         border: #93ad18 1px solid;
