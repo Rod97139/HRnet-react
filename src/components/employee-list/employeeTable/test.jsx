@@ -135,7 +135,7 @@ const ReactDataTable = ({data}) => {
                 <input onChange={(e)=> searchItem(e.target.value)} type="text" placeholder="Search by Name" />
             </div>
           </div>
-        <table className="data-table-body">
+        <table className="data-table-wrapper">
             <thead className="data-table-header">
                 <tr>
                     {data.length > 0 && Object.keys(data[0]).map((key, index) => {
@@ -143,7 +143,7 @@ const ReactDataTable = ({data}) => {
                     })}
                 </tr>
             </thead>
-            <tbody>
+            <tbody cl>
                 {data.length > 0 && displaiedData.map((item, index) => {
                     return (
                         <tr key={index}>

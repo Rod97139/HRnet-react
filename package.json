@@ -12,7 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "react": "^18.3.1",
-    "react-data-table-by-rod-test-v2": "^1.0.8",
+    "react-data-table-by-rod-test-v2": "^1.0.9",
     "react-datepicker": "^7.3.0",
     "react-dom": "^18.3.1",
     "react-modal": "^3.16.1",

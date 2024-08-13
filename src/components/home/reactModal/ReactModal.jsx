@@ -28,7 +28,7 @@ const ReactModal = ({shouldOpenModal, setShouldOpenModal}) => {
         style={customStyles}
         contentLabel="Example Modal"
         >
-          <div>Employé bien ajouté</div>
+          <div>Employee correctly added</div>
           <button onClick={closeModal}>close</button>
         </Modal>
     </div>
