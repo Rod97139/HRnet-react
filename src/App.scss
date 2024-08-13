@@ -23,6 +23,13 @@ button, input, select, option {
     justify-content: center;
 }
 
+.hr-btn {
+    min-width: 80px;
+    &:hover {
+        background-color: #93ad18;
+    }
+}
+
 
 .container {
     display: flex;
