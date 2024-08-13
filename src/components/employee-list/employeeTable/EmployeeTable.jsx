@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import { getEmployeeList } from "../../../selectors";
-import {ReactDataTable} from "react-data-table-by-rod-test-v2";
-import './ReactDataTable.scss';
+import {ReactDataTable} from "react-data-table-by-rod";
+import './EmployeeTable.scss';
 
 const EmployeeTable = () => {
     const employees = useSelector(getEmployeeList)
