@@ -15,6 +15,8 @@ const ReactModal = ({shouldOpenModal, setShouldOpenModal}) => {
           flexDirection: 'column',
           justifyContent: 'space-around',
           alignItems: 'center',
+          backgroundColor: '#596e07',
+          color: 'white',
 
         },
       };
