@@ -1,5 +1,5 @@
 import "./Header.scss"
-import homeIcon from "/wealth-health.png"
+import homeIcon from "/wealth-health.svg"
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
