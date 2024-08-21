@@ -11,6 +11,14 @@ const Header = () => {
                     <img className="home-icon" src={homeIcon} alt="Home Icon" />
                 </NavLink>
                 <h1 className="page-title">HRnet</h1>
+                <div className="hamburger"
+                    onClick={
+                        () => {
+                            const sideLinks = document.querySelector('.side-links');
+                            sideLinks.classList.toggle('responsive');
+                        }
+                    }
+                ></div>
                 <div className="side-links">
                     <NavLink to ='/' >
                         create employee

@@ -1,13 +1,11 @@
 #create-employee {
-    margin-top: 20px;
-    // width: 600px;
+    margin-block: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     fieldset {
-        width: 500px;
         padding: 20px;
         border: 1px solid #93ad18;
         border-radius: 5px;
@@ -27,6 +25,12 @@
         align-items: center;
         margin-bottom: 20px;
         width: 500px;
+        @media screen and (max-width: 580px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            width: unset;
+            
+        }
 
         .form-group {
             flex: 0 0 48%; // Chaque champ prend environ la moitié de la largeur de la ligne
