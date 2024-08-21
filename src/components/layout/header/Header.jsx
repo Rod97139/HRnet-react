@@ -12,7 +12,7 @@ const Header = () => {
                 <h1 className="page-title">HRnet</h1>
                 <div className="hamburger"
                     onClick={
-                        () => {9908256880733945
+                        () => {
                             const sideLinks = document.querySelector('.side-links');
                             sideLinks.classList.toggle('responsive');
                         }
