@@ -1,5 +1,6 @@
 .data-table-header > tr > .data-table-sorter {
     cursor: pointer;
+    position: relative;
 }
 
 .data-table-header > tr > .data-table-sorter.none::after {
@@ -66,7 +67,7 @@
         & > button {
             font-size: 10px;
             padding: 7px 8px;
-            margin: 0 5px;
+            margin: 5px;
             cursor: pointer;
             &[disabled] {
                 cursor: default;
@@ -81,7 +82,11 @@
             }
         }
     }
+    .scroll-table {
+        overflow-x: auto;
+    }
     .data-table-wrapper {
+        width: 100%;
         border: #93ad18 1px solid;
         .data-table-header {
             .data-table-sorter {
@@ -106,5 +111,16 @@
     .data-table-body td {
         text-align: center; // Centrer le texte horizontalement dans les cellules
         vertical-align: middle; // Centrer le texte verticalement dans les cellules
+    }
+
+    @media screen and (max-width: 580px) {
+        .data-table-search-bar {
+            flex-direction: column;
+            align-self: center;
+        }
+        .data-table-footer {
+            flex-direction: column;
+            align-self: center;
+        }
     }
 }
