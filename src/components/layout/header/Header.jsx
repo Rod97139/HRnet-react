@@ -8,12 +8,12 @@ const Header = () => {
         <header className="header">
             <nav className="nav">
                 <NavLink to='/'>
-                    <img className="home-icon" src={homeIcon} alt="Home Icon" />
+                    <img className="home-icon" width={'80'} height={'81'} src={homeIcon} alt="Home Icon" />
                 </NavLink>
                 <h1 className="page-title">HRnet</h1>
                 <div className="hamburger"
                     onClick={
-                        () => {
+                        () => {9908256880733945
                             const sideLinks = document.querySelector('.side-links');
                             sideLinks.classList.toggle('responsive');
                         }
