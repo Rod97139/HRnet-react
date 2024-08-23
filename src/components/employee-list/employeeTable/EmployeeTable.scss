@@ -91,6 +91,9 @@
         .data-table-header {
             .data-table-sorter {
                 min-width: 130px;
+                &#street {
+                    min-width: 270px;
+                }
             }
         }
     }
