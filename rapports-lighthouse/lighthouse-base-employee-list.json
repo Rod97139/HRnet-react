@@ -1,0 +1,4226 @@
+{
+  "requestedUrl": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+  "finalUrl": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+  "mainDocumentUrl": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+  "finalDisplayedUrl": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+  "lighthouseVersion": "12.0.0",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.119 Safari/537.36",
+  "fetchTime": "2024-08-28T16:58:09.950Z",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.6533.119 Safari/537.36",
+    "benchmarkIndex": 233,
+    "credits": {
+      "axe-core": "4.9.0"
+    }
+  },
+  "runWarnings": [],
+  "configSettings": {
+    "emulatedFormFactor": "mobile",
+    "formFactor": "mobile",
+    "locale": "fr",
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "best-practices",
+      "seo"
+    ],
+    "channel": "lr"
+  },
+  "audits": {
+    "font-size": {
+      "id": "font-size",
+      "title": "Les tailles de police utilisées dans le document ne sont pas lisibles",
+      "description": "Les tailles de police inférieures à 12 pixels sont trop petites pour être lisibles et nécessitent que les visiteurs sur la version mobile pincent l'écran pour zoomer et lire le texte. Veuillez utiliser une police de texte de plus de 12 pixels sur plus de 60 % du texte de la page. [En savoir plus sur les tailles de police lisibles](https://developer.chrome.com/docs/lighthouse/seo/font-size/)",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "explanation": "Le texte est illisible, car aucune balise Meta de fenêtre d'affichage n'est optimisée pour les écrans mobiles."
+    },
+    "link-name": {
+      "id": "link-name",
+      "title": "Les liens ont un nom visible",
+      "description": "Rédigez du texte visible et unique pour les liens (et pour le texte de substitution des images, si vous vous en servez dans des liens), afin que les utilisateurs de lecteurs d'écran puissent facilement positionner le curseur dessus et bénéficient d'une meilleure expérience de navigation. [Découvrez comment rendre les liens accessibles.](https://dequeuniversity.com/rules/axe/4.9/link-name)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "uses-rel-preconnect": {
+      "id": "uses-rel-preconnect",
+      "title": "Connectez-vous à l'avance aux origines souhaitées",
+      "description": "Envisagez d'ajouter les indices de ressources `preconnect` ou `dns-prefetch` pour établir les premières connexions avec des origines tierces importantes. [Découvrez comment établir des préconnexions aux origines requises.](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "headings": [],
+        "type": "opportunity",
+        "overallSavingsMs": 0,
+        "items": [],
+        "sortedBy": [
+          "wastedMs"
+        ]
+      },
+      "warnings": [],
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "bootup-time": {
+      "id": "bootup-time",
+      "title": "Délai d'exécution de JavaScript",
+      "description": "Envisagez de réduire le temps consacré à l'analyse, la compilation et l'exécution de JavaScript. La livraison de charges utiles JavaScript plus petites peut vous aider. [Découvrez comment réduire le temps d'exécution de JavaScript.](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "0,4 s",
+      "details": {
+        "items": [
+          {
+            "scripting": 416.01599999999974,
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "scriptParseCompile": 7.096,
+            "total": 501.58799999999974
+          },
+          {
+            "scripting": 13.116,
+            "scriptParseCompile": 0,
+            "url": "Unattributable",
+            "total": 185.34000000000003
+          },
+          {
+            "scriptParseCompile": 0.612,
+            "total": 153.384,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+            "scripting": 4.632
+          }
+        ],
+        "headings": [
+          {
+            "label": "URL",
+            "valueType": "url",
+            "key": "url"
+          },
+          {
+            "label": "Temps CPU total",
+            "granularity": 1,
+            "valueType": "ms",
+            "key": "total"
+          },
+          {
+            "granularity": 1,
+            "key": "scripting",
+            "valueType": "ms",
+            "label": "Évaluation des scripts"
+          },
+          {
+            "label": "Analyse des scripts",
+            "granularity": 1,
+            "key": "scriptParseCompile",
+            "valueType": "ms"
+          }
+        ],
+        "type": "table",
+        "summary": {
+          "wastedMs": 441.47199999999975
+        },
+        "sortedBy": [
+          "total"
+        ]
+      },
+      "numericValue": 441.47199999999975,
+      "numericUnit": "millisecond"
+    },
+    "uses-long-cache-ttl": {
+      "id": "uses-long-cache-ttl",
+      "title": "Diffusez des éléments statiques grâce à des règles de cache efficaces",
+      "description": "Une longue durée de vie du cache peut accélérer les visites répétées sur votre page. [En savoir plus sur les règles efficaces liées au cache](https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/)",
+      "score": 0.5,
+      "scoreDisplayMode": "metricSavings",
+      "displayValue": "2 ressources trouvées",
+      "details": {
+        "items": [
+          {
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js",
+            "cacheHitProbability": 0.9,
+            "totalBytes": 792,
+            "cacheLifetimeMs": 604800000,
+            "wastedBytes": 79.19999999999999,
+            "debugData": {
+              "public": true,
+              "type": "debugdata",
+              "max-age": 604800
+            }
+          },
+          {
+            "wastedBytes": 66.59999999999998,
+            "cacheLifetimeMs": 604800000,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/app.css",
+            "cacheHitProbability": 0.9,
+            "debugData": {
+              "public": true,
+              "type": "debugdata",
+              "max-age": 604800
+            },
+            "totalBytes": 666
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "valueType": "url",
+            "label": "URL",
+            "key": "url"
+          },
+          {
+            "displayUnit": "duration",
+            "key": "cacheLifetimeMs",
+            "valueType": "ms",
+            "label": "Cache de la valeur TTL"
+          },
+          {
+            "displayUnit": "kb",
+            "granularity": 1,
+            "valueType": "bytes",
+            "key": "totalBytes",
+            "label": "Taille de transfert"
+          }
+        ],
+        "summary": {
+          "wastedBytes": 145.79999999999995
+        },
+        "skipSumming": [
+          "cacheLifetimeMs"
+        ],
+        "sortedBy": [
+          "totalBytes"
+        ]
+      },
+      "numericValue": 145.79999999999995,
+      "numericUnit": "byte"
+    },
+    "redirects": {
+      "id": "redirects",
+      "title": "Évitez les redirections de page multiples",
+      "description": "Les redirections entraînent des retards supplémentaires avant que la page ne puisse être chargée. [Découvrez comment éviter les redirections de page.](https://developer.chrome.com/docs/lighthouse/performance/redirects/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "opportunity",
+        "overallSavingsMs": 0
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "bypass": {
+      "id": "bypass",
+      "title": "La page contient un titre, un lien \"Ignorer\" ou un point de repère",
+      "description": "En ajoutant des méthodes pour contourner les contenus répétitifs, vous permettez aux internautes qui utilisent un clavier de naviguer plus efficacement sur la page. [En savoir plus sur les blocs de contournement](https://dequeuniversity.com/rules/axe/4.9/bypass)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "max-potential-fid": {
+      "id": "max-potential-fid",
+      "title": "Max Potential First Input Delay",
+      "description": "Le retard maximal (Maximum Potential First Input Delay) auquel vos utilisateurs peuvent éventuellement être confrontés correspond à la durée de la tâche la plus longue. [En savoir plus sur la métrique \"Maximum Potential First Input Delay\"](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/)",
+      "score": 0.66,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "200 ms",
+      "numericValue": 200,
+      "numericUnit": "millisecond"
+    },
+    "user-timings": {
+      "id": "user-timings",
+      "title": "Marques et mesures du temps utilisateur",
+      "description": "Envisagez de doter votre appli de l'API User Timing pour mesurer ses performances réelles lors d'expériences utilisateur clés. [En savoir plus sur les marques User Timing](https://developer.chrome.com/docs/lighthouse/performance/user-timings/)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "aria-valid-attr": {
+      "id": "aria-valid-attr",
+      "title": "Les attributs `[aria-*]` sont valides et correctement orthographiés",
+      "description": "Les technologies d'assistance telles que les lecteurs d'écran ne peuvent pas interpréter les attributs ARIA si leurs noms ne sont pas valides. [En savoir plus sur les attributs ARIA valides](https://dequeuniversity.com/rules/axe/4.9/aria-valid-attr)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "unused-javascript": {
+      "id": "unused-javascript",
+      "title": "Réduisez les ressources JavaScript inutilisées",
+      "description": "Réduisez les ressources JavaScript inutilisées et différez le chargement des scripts tant qu'ils ne sont pas requis afin de réduire la quantité d'octets consommés par l'activité réseau. [Découvrez comment réduire les ressources JavaScript inutilisées.](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "overallSavingsBytes": 0,
+        "items": [],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "type": "opportunity",
+        "overallSavingsMs": 0,
+        "headings": []
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "metrics": {
+      "id": "metrics",
+      "title": "Metrics",
+      "description": "Collects all available metrics.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "observedTimeOrigin": 0,
+            "largestContentfulPaint": 2139,
+            "observedDomContentLoaded": 2569,
+            "observedLargestContentfulPaintAllFramesTs": 2792329040755,
+            "observedTimeOriginTs": 2792326421228,
+            "observedSpeedIndexTs": 2792329131867,
+            "observedLargestContentfulPaintTs": 2792329040755,
+            "maxPotentialFID": 200,
+            "observedLoad": 2570,
+            "observedLastVisualChange": 2781,
+            "observedNavigationStartTs": 2792326421228,
+            "observedCumulativeLayoutShift": 0.00006164445052678199,
+            "observedFirstPaint": 2620,
+            "observedFirstMeaningfulPaintTs": 2792329154252,
+            "observedTraceEndTs": 2792331475948,
+            "observedFirstMeaningfulPaint": 2733,
+            "observedTraceEnd": 5055,
+            "firstContentfulPaint": 2039,
+            "cumulativeLayoutShift": 0.00006164445052678199,
+            "observedFirstContentfulPaintTs": 2792329040755,
+            "observedFirstContentfulPaintAllFrames": 2620,
+            "observedLastVisualChangeTs": 2792329202228,
+            "firstMeaningfulPaint": 2139,
+            "observedFirstContentfulPaint": 2620,
+            "observedCumulativeLayoutShiftMainFrame": 0.00006164445052678199,
+            "observedFirstContentfulPaintAllFramesTs": 2792329040755,
+            "observedLargestContentfulPaint": 2620,
+            "cumulativeLayoutShiftMainFrame": 0.00006164445052678199,
+            "speedIndex": 4659,
+            "interactive": 2205,
+            "observedFirstVisualChangeTs": 2792326735228,
+            "observedSpeedIndex": 2711,
+            "totalBlockingTime": 113,
+            "observedNavigationStart": 0,
+            "observedDomContentLoadedTs": 2792328990210,
+            "timeToFirstByte": 601,
+            "observedLoadTs": 2792328991262,
+            "observedFirstVisualChange": 314,
+            "observedLargestContentfulPaintAllFrames": 2620,
+            "observedFirstPaintTs": 2792329040755
+          },
+          {
+            "lcpInvalidated": false
+          }
+        ]
+      },
+      "numericValue": 2205,
+      "numericUnit": "millisecond"
+    },
+    "third-party-summary": {
+      "id": "third-party-summary",
+      "title": "Réduire l'impact du code tiers",
+      "description": "Le code tiers peut affecter considérablement les performances de chargement des pages. Limitez le nombre de fournisseurs tiers redondants, et essayez de charger du code tiers une fois le chargement de votre page terminé. [Découvrez comment réduire l'impact du code tiers.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)",
+      "score": 0,
+      "scoreDisplayMode": "metricSavings",
+      "displayValue": "Le thread principal a été bloqué par du code tiers pendant 300 ms",
+      "details": {
+        "headings": [
+          {
+            "subItemsHeading": {
+              "key": "url",
+              "valueType": "url"
+            },
+            "key": "entity",
+            "label": "Tiers",
+            "valueType": "text"
+          },
+          {
+            "granularity": 1,
+            "label": "Taille de transfert",
+            "valueType": "bytes",
+            "subItemsHeading": {
+              "key": "transferSize"
+            },
+            "key": "transferSize"
+          },
+          {
+            "granularity": 1,
+            "key": "blockingTime",
+            "valueType": "ms",
+            "label": "Durée de blocage du thread principal",
+            "subItemsHeading": {
+              "key": "blockingTime"
+            }
+          }
+        ],
+        "summary": {
+          "wastedMs": 301.36,
+          "wastedBytes": 65447
+        },
+        "items": [
+          {
+            "tbtImpact": 150,
+            "entity": "Google CDN",
+            "blockingTime": 301.36,
+            "mainThreadTime": 501.58799999999985,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "tbtImpact": 150,
+                  "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+                  "transferSize": 31984,
+                  "blockingTime": 301.36,
+                  "mainThreadTime": 501.58799999999985
+                }
+              ]
+            },
+            "transferSize": 31984
+          },
+          {
+            "tbtImpact": 0,
+            "blockingTime": 0,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "mainThreadTime": 38.008,
+                  "transferSize": 28635,
+                  "blockingTime": 0,
+                  "url": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js",
+                  "tbtImpact": 0
+                },
+                {
+                  "blockingTime": 0,
+                  "tbtImpact": 0,
+                  "url": "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css",
+                  "mainThreadTime": 0,
+                  "transferSize": 2717
+                },
+                {
+                  "tbtImpact": 0,
+                  "url": "https://cdn.datatables.net/1.10.21/images/sort_both.png",
+                  "mainThreadTime": 0,
+                  "blockingTime": 0,
+                  "transferSize": 1075
+                },
+                {
+                  "tbtImpact": 0,
+                  "url": "https://cdn.datatables.net/1.10.21/images/sort_asc.png",
+                  "blockingTime": 0,
+                  "transferSize": 1036,
+                  "mainThreadTime": 0
+                }
+              ]
+            },
+            "transferSize": 33463,
+            "entity": "datatables.net",
+            "mainThreadTime": 38.008
+          }
+        ],
+        "isEntityGrouped": true,
+        "type": "table"
+      }
+    },
+    "tabindex": {
+      "id": "tabindex",
+      "title": "Aucun élément n'a de valeur `[tabindex]` supérieure à 0",
+      "description": "Une valeur supérieure à 0 implique un ordre de navigation explicite. Bien que cela soit valide d'un point de vue technique, cela crée souvent une expérience frustrante pour les utilisateurs qui s'appuient sur des technologies d'assistance. [En savoir plus sur l'attribut `tabindex`](https://dequeuniversity.com/rules/axe/4.9/tabindex)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "aria-meter-name": {
+      "id": "aria-meter-name",
+      "title": "Les éléments ARIA `meter` ont des noms accessibles",
+      "description": "Lorsqu'un élément outil de mesure n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [Découvrez comment nommer des éléments `meter`.](https://dequeuniversity.com/rules/axe/4.9/aria-meter-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "diagnostics": {
+      "id": "diagnostics",
+      "title": "Diagnostics",
+      "description": "Collection of useful page vitals.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "numTasksOver25ms": 1,
+            "numTasksOver500ms": 0,
+            "totalTaskTime": 221.2509999999998,
+            "numScripts": 3,
+            "numTasks": 148,
+            "numStylesheets": 2,
+            "maxServerLatency": 2,
+            "rtt": 0.002332138288937753,
+            "numFonts": 0,
+            "totalByteWeight": 67640,
+            "numRequests": 8,
+            "mainDocumentTransferSize": 735,
+            "numTasksOver100ms": 1,
+            "maxRtt": 9.933607500000004,
+            "numTasksOver50ms": 1,
+            "throughput": 9493454937.34537,
+            "numTasksOver10ms": 5
+          }
+        ]
+      }
+    },
+    "crawlable-anchors": {
+      "id": "crawlable-anchors",
+      "title": "Les liens peuvent être explorés",
+      "description": "Les moteurs de recherche peuvent utiliser les attributs `href` des liens pour explorer les sites Web. Assurez-vous que l'attribut `href` des éléments d'ancrage pointe vers une destination appropriée, pour que davantage de pages du site puissent être détectées. [Découvrez comment rendre les liens explorables.](https://support.google.com/webmasters/answer/9112205)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "interactive": {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "description": "La métrique Délai avant interactivité correspond au temps nécessaire pour que la page devienne entièrement interactive. [En savoir plus sur cette métrique](https://developer.chrome.com/docs/lighthouse/performance/interactive/)",
+      "score": 0.99,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "2,2 s",
+      "numericValue": 2205.493826085133,
+      "numericUnit": "millisecond"
+    },
+    "third-party-cookies": {
+      "id": "third-party-cookies",
+      "title": "Évite les cookies tiers",
+      "description": "Les cookies tiers ne seront plus acceptés dans une prochaine version de Chrome. [En savoir plus sur la suppression progressive des cookies tiers](https://developer.chrome.com/en/docs/privacy-sandbox/third-party-cookie-phase-out/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "input-button-name": {
+      "id": "input-button-name",
+      "title": "Les boutons d'entrée contiennent du texte visible.",
+      "description": "Ajouter un texte visible et accessible aux boutons d'entrée peut aider les utilisateurs de lecteurs d'écran à comprendre la fonction de ces boutons d'entrée. [En savoir plus sur les boutons d'entrée](https://dequeuniversity.com/rules/axe/4.9/input-button-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "custom-controls-roles": {
+      "id": "custom-controls-roles",
+      "title": "Custom controls have ARIA roles",
+      "description": "Custom interactive controls have appropriate ARIA roles. [Learn how to add roles to custom controls](https://developer.chrome.com/docs/lighthouse/accessibility/custom-control-roles/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "aria-text": {
+      "id": "aria-text",
+      "title": "Les éléments comportant l'attribut `role=text` n'ont pas de descendants sélectionnables.",
+      "description": "L'ajout de `role=text` autour d'un nœud de texte divisé par le balisage permet à VoiceOver de le traiter comme une seule expression, mais les descendants sélectionnables de l'élément ne seront pas annoncés. [En savoir plus sur l'attribut `role=text`](https://dequeuniversity.com/rules/axe/4.9/aria-text)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "logical-tab-order": {
+      "id": "logical-tab-order",
+      "title": "The page has a logical tab order",
+      "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more about logical tab ordering](https://developer.chrome.com/docs/lighthouse/accessibility/logical-tab-order/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "unsized-images": {
+      "id": "unsized-images",
+      "title": "Les éléments d'image possèdent une `width` et une `height` explicites",
+      "description": "Indiquez une largeur et une hauteur explicites sur les éléments d'image afin de réduire les décalages de mise en page et d'améliorer le CLS. [Découvrez comment définir les dimensions de l'image.](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "focus-traps": {
+      "id": "focus-traps",
+      "title": "User focus is not accidentally trapped in a region",
+      "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn how to avoid focus traps](https://developer.chrome.com/docs/lighthouse/accessibility/focus-traps/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "long-tasks": {
+      "id": "long-tasks",
+      "title": "Évitez les tâches longues dans le thread principal",
+      "description": "Indique les tâches les plus longues du thread principal, ce qui est utile pour identifier celles qui entraînent le plus de retard. [Découvrez comment éviter les longues tâches du thread principal.](https://web.dev/articles/long-tasks-devtools)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "4 tâches longues trouvées",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "tasks": [
+            {
+              "other": 200,
+              "duration": 200,
+              "urlIndex": 0,
+              "scriptEvaluation": 0,
+              "startTime": 2038.8
+            },
+            {
+              "duration": 100,
+              "urlIndex": 1,
+              "other": 100,
+              "scriptEvaluation": 0,
+              "startTime": 780.8
+            },
+            {
+              "startTime": 1932.8,
+              "urlIndex": 0,
+              "scriptEvaluation": 0,
+              "duration": 74,
+              "other": 74
+            },
+            {
+              "urlIndex": 2,
+              "duration": 56,
+              "parseHTML": 0,
+              "startTime": 882.8,
+              "other": 56
+            }
+          ],
+          "urls": [
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "Unattributable",
+            "https://kasa.rodolphe.mingo.qc.lu/employee-list.html"
+          ]
+        },
+        "skipSumming": [
+          "startTime"
+        ],
+        "type": "table",
+        "items": [
+          {
+            "startTime": 2038.7938260851333,
+            "duration": 200,
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+          },
+          {
+            "startTime": 780.7938260851333,
+            "url": "Unattributable",
+            "duration": 100
+          },
+          {
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "duration": 74,
+            "startTime": 1932.7938260851333
+          },
+          {
+            "duration": 56,
+            "startTime": 882.7938260851333,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html"
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ],
+        "headings": [
+          {
+            "label": "URL",
+            "valueType": "url",
+            "key": "url"
+          },
+          {
+            "granularity": 1,
+            "key": "startTime",
+            "valueType": "ms",
+            "label": "Heure de début"
+          },
+          {
+            "label": "Durée",
+            "valueType": "ms",
+            "key": "duration",
+            "granularity": 1
+          }
+        ]
+      }
+    },
+    "aria-hidden-focus": {
+      "id": "aria-hidden-focus",
+      "title": "Les éléments `[aria-hidden=\"true\"]` ne contiennent pas de descendants sélectionnables",
+      "description": "La présence de descendants sélectionnables dans un élément `[aria-hidden=\"true\"]` empêche les utilisateurs de technologies d'assistance, telles que des lecteurs d'écran, de se servir de ces éléments interactifs. [Découvrez comment `aria-hidden` affecte les éléments sélectionnables.](https://dequeuniversity.com/rules/axe/4.9/aria-hidden-focus)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "resource-summary": {
+      "id": "resource-summary",
+      "title": "Resources Summary",
+      "description": "Aggregates all network requests and groups them by type",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "resourceType": "total",
+            "transferSize": 67640,
+            "requestCount": 8,
+            "label": "Total"
+          },
+          {
+            "label": "Script",
+            "transferSize": 61411,
+            "resourceType": "script",
+            "requestCount": 3
+          },
+          {
+            "resourceType": "stylesheet",
+            "requestCount": 2,
+            "transferSize": 3383,
+            "label": "Feuille de style"
+          },
+          {
+            "label": "Image",
+            "transferSize": 2111,
+            "requestCount": 2,
+            "resourceType": "image"
+          },
+          {
+            "label": "Document",
+            "transferSize": 735,
+            "resourceType": "document",
+            "requestCount": 1
+          },
+          {
+            "requestCount": 0,
+            "resourceType": "media",
+            "label": "Contenu multimédia",
+            "transferSize": 0
+          },
+          {
+            "requestCount": 0,
+            "resourceType": "font",
+            "label": "Police de caractères",
+            "transferSize": 0
+          },
+          {
+            "label": "Autre",
+            "resourceType": "other",
+            "transferSize": 0,
+            "requestCount": 0
+          },
+          {
+            "label": "Tiers",
+            "transferSize": 65447,
+            "requestCount": 5,
+            "resourceType": "third-party"
+          }
+        ],
+        "headings": [
+          {
+            "label": "Type de ressource",
+            "key": "label",
+            "valueType": "text"
+          },
+          {
+            "label": "Requêtes",
+            "key": "requestCount",
+            "valueType": "numeric"
+          },
+          {
+            "label": "Taille de transfert",
+            "key": "transferSize",
+            "valueType": "bytes"
+          }
+        ]
+      }
+    },
+    "aria-conditional-attr": {
+      "id": "aria-conditional-attr",
+      "title": "ARIA attributes are used as specified for the element's role",
+      "description": "Some ARIA attributes are only allowed on an element under certain conditions. [Learn more about conditional ARIA attributes](https://dequeuniversity.com/rules/axe/4.9/aria-conditional-attr).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "aria-allowed-role": {
+      "id": "aria-allowed-role",
+      "title": "Les valeurs attribuées à `role=\"\"` sont des rôles ARIA valides.",
+      "description": "Les `role`s ARIA permettent aux technologies d'assistance de connaître le rôle de chaque élément sur la page Web. Si les valeurs des `role`s sont mal orthographiées, que la valeur des `role` ARIA n'existe pas ou que les rôles sont abstraits, l'objectif de l'élément ne sera pas communiqué aux utilisateurs de technologies d'assistance. [En savoir plus sur les rôles ARIA](https://dequeuniversity.com/rules/axe/4.9/aria-allowed-role)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "legacy-javascript": {
+      "id": "legacy-javascript",
+      "title": "Évitez d'utiliser de l'ancien code JavaScript dans les navigateurs récents",
+      "description": "Les polyfills et les transformations permettent aux anciens navigateurs d'utiliser les nouvelles fonctionnalités JavaScript. Dans la majorité des cas cependant, ils ne sont pas nécessaires aux navigateurs récents. Adoptez une stratégie de déploiement de script récente pour votre groupe JavaScript : utilisez la détection de fonctionnalité module/nomodule pour réduire la quantité de code envoyée aux navigateurs récents tout en continuant de prendre en charge les plus anciens. [Découvrez comment utiliser le code JavaScript récent.](https://web.dev/articles/publish-modern-javascript)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "type": "opportunity",
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "headings": [],
+        "items": []
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "dlitem": {
+      "id": "dlitem",
+      "title": "Les éléments de liste de définition sont encapsulés dans des éléments `<dl>`",
+      "description": "Les éléments de liste de définition (`<dt>` et `<dd>`) doivent être encapsulés dans un élément `<dl>` parent afin que les lecteurs d'écran puissent les énoncer correctement. [Découvrez comment structurer correctement les listes de définition.](https://dequeuniversity.com/rules/axe/4.9/dlitem)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "hreflang": {
+      "id": "hreflang",
+      "title": "L'attribut `hreflang` du document est valide",
+      "description": "Les liens hreflang indiquent aux moteurs de recherche la version de la page qu'ils doivent présenter dans les résultats de recherche pour une page ou une région donnée. [En savoir plus sur `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "http-status-code": {
+      "id": "http-status-code",
+      "title": "La page renvoie un code d'état HTTP de réussite",
+      "description": "Les pages renvoyant des codes d'état HTTP d'échec peuvent ne pas être indexées correctement. [En savoir plus sur les codes d'état HTTP](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/)",
+      "score": 1,
+      "scoreDisplayMode": "binary"
+    },
+    "valid-source-maps": {
+      "id": "valid-source-maps",
+      "title": "La page contient des mappages source valides",
+      "description": "Les mappages source traduisent le code minimisé pour obtenir le code source d'origine. Ce processus aide les développeurs à effectuer le débogage en phase de production. De plus, Lighthouse est en mesure de fournir d'autres renseignements. Envisagez de déployer des mappages source pour profiter de ces avantages. [En savoir plus sur les mappages source](https://developer.chrome.com/docs/devtools/javascript/source-maps/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "aria-progressbar-name": {
+      "id": "aria-progressbar-name",
+      "title": "Les éléments ARIA `progressbar` ont des noms accessibles",
+      "description": "Lorsqu'un élément `progressbar` n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [Découvrez comment ajouter des libellés aux éléments `progressbar`.](https://dequeuniversity.com/rules/axe/4.9/aria-progressbar-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "modern-image-formats": {
+      "id": "modern-image-formats",
+      "title": "Diffusez des images aux formats nouvelle génération",
+      "description": "Les formats d'image comme WebP et AVIF proposent souvent une meilleure compression que PNG et JPEG. Par conséquent, les téléchargements sont plus rapides et la consommation de données est réduite. [En savoir plus sur les formats d'image récents](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "items": [],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "type": "opportunity",
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          }
+        },
+        "headings": []
+      },
+      "warnings": [],
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "object-alt": {
+      "id": "object-alt",
+      "title": "Les éléments `<object>` contiennent du texte de substitution",
+      "description": "Les lecteurs d'écran ne peuvent pas traduire les contenus non textuels. En ajoutant un texte de substitution aux éléments `<object>`, vous aiderez les lecteurs d'écran à transmettre votre message aux utilisateurs. [En savoir plus sur le texte de substitution aux éléments `object`](https://dequeuniversity.com/rules/axe/4.9/object-alt)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-dialog-name": {
+      "id": "aria-dialog-name",
+      "title": "Les éléments comportant `role=\"dialog\"` ou `role=\"alertdialog\"` ont des noms accessibles.",
+      "description": "Les éléments de boîte de dialogue ARIA sans nom accessible peuvent empêcher les utilisateurs de lecteurs d'écran de comprendre la fonction de ces éléments. [Découvrez comment rendre les éléments de boîte de dialogue ARIA plus accessibles.](https://dequeuniversity.com/rules/axe/4.9/aria-dialog-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "uses-text-compression": {
+      "id": "uses-text-compression",
+      "title": "Activez la compression de texte",
+      "description": "Les ressources textuelles doivent être diffusées compressées (Gzip, Deflate ou Brotli) pour réduire le nombre total d'octets du réseau. [En savoir plus sur la compression de texte](https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "overallSavingsMs": 0,
+        "type": "opportunity",
+        "items": [],
+        "headings": [],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          }
+        },
+        "overallSavingsBytes": 0
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "heading-order": {
+      "id": "heading-order",
+      "title": "Les éléments d'en-tête sont classés séquentiellement par ordre décroissant",
+      "description": "Les en-têtes correctement classés qui respectent les niveaux transmettent la structure sémantique de la page, ce qui garantit une navigation plus aisée et permet d'identifier plus facilement dans quels cas utiliser les technologies d'assistance. [En savoir plus sur l'ordre des titres](https://dequeuniversity.com/rules/axe/4.9/heading-order)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "link-in-text-block": {
+      "id": "link-in-text-block",
+      "title": "Les liens sont identifiables sans se baser sur la couleur.",
+      "description": "Un texte faiblement contrasté est difficile, voire impossible à lire pour de nombreux utilisateurs. Un texte de lien visible permet d'améliorer l'expérience des personnes malvoyantes. [Découvrez comment rendre les liens identifiables.](https://dequeuniversity.com/rules/axe/4.9/link-in-text-block)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "html-lang-valid": {
+      "id": "html-lang-valid",
+      "title": "La valeur de l'attribut `[lang]` de l'élément `<html>` est valide",
+      "description": "Le fait de spécifier une [langue BCP 47](https://www.w3.org/International/questions/qa-choosing-language-tags#question) valide permet d'aider les lecteurs d'écran à énoncer correctement le texte. [Découvrez comment utiliser l'attribut `lang`.](https://dequeuniversity.com/rules/axe/4.9/html-lang-valid)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "uses-optimized-images": {
+      "id": "uses-optimized-images",
+      "title": "Encodez les images de manière efficace",
+      "description": "Les images optimisées se chargent plus rapidement et consomment moins de données mobiles. [Découvrez comment encoder efficacement des images.](https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          }
+        },
+        "items": [],
+        "type": "opportunity",
+        "headings": []
+      },
+      "warnings": [],
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "server-response-time": {
+      "id": "server-response-time",
+      "title": "Réduire le temps de réponse initial du serveur",
+      "description": "Le temps de réponse du serveur pour le document principal doit rester court, car toutes les autres requêtes en dépendent. [En savoir plus sur la métrique \"Time to First Byte\"](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/)",
+      "score": 0,
+      "scoreDisplayMode": "metricSavings",
+      "displayValue": "Le document racine a pris 1 240 ms",
+      "details": {
+        "items": [
+          {
+            "responseTime": 1235,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html"
+          }
+        ],
+        "type": "opportunity",
+        "overallSavingsMs": 1135,
+        "headings": [
+          {
+            "label": "URL",
+            "key": "url",
+            "valueType": "url"
+          },
+          {
+            "key": "responseTime",
+            "valueType": "timespanMs",
+            "label": "Temps passé"
+          }
+        ]
+      },
+      "numericValue": 1235,
+      "numericUnit": "millisecond"
+    },
+    "valid-lang": {
+      "id": "valid-lang",
+      "title": "Les attributs `[lang]` ont une valeur valide",
+      "description": "Le fait de spécifier une [langue BCP 47](https://www.w3.org/International/questions/qa-choosing-language-tags#question) valide pour les éléments permet de s'assurer que le texte sera prononcé correctement par les lecteurs d'écran. [Découvrez comment utiliser l'attribut `lang`.](https://dequeuniversity.com/rules/axe/4.9/valid-lang)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "button-name": {
+      "id": "button-name",
+      "title": "Les boutons ont un nom accessible",
+      "description": "Lorsqu'un bouton n'a pas de nom accessible, les lecteurs d'écran annoncent simplement qu'il s'agit d'un \"bouton\", ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [Découvrez comment rendre les boutons plus accessibles.](https://dequeuniversity.com/rules/axe/4.9/button-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "td-has-header": {
+      "id": "td-has-header",
+      "title": "Les éléments `<td>` d'un grand `<table>` comportent un ou plusieurs en-têtes de tableau.",
+      "description": "Les lecteurs d'écran proposent des fonctionnalités qui permettent de naviguer plus simplement dans les tableaux. Vous pouvez améliorer l'expérience des utilisateurs de lecteurs d'écran en vous assurant que les éléments `<td>` d'un grand tableau (au moins trois cellules en largeur et en hauteur) sont associés à un en-tête de tableau. [En savoir plus sur les en-têtes de tableaux](https://dequeuniversity.com/rules/axe/4.9/td-has-header)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-deprecated-role": {
+      "id": "aria-deprecated-role",
+      "title": "Deprecated ARIA roles were not used",
+      "description": "Deprecated ARIA roles may not be processed correctly by assistive technology. [Learn more about deprecated ARIA roles](https://dequeuniversity.com/rules/axe/4.9/aria-deprecated-role).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "link-text": {
+      "id": "link-text",
+      "title": "Les liens contiennent un texte descriptif",
+      "description": "Le texte descriptif d'un lien aide les moteurs de recherche à comprendre votre contenu. [Découvrez comment rendre les liens plus accessibles.](https://developer.chrome.com/docs/lighthouse/seo/link-text/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "identical-links-same-purpose": {
+      "id": "identical-links-same-purpose",
+      "title": "Les liens identiques ont la même fonction.",
+      "description": "Les liens vers une même destination doivent avoir une description identique pour que les internautes comprennent la fonction du lien et décident de le suivre ou non. [En savoir plus sur les liens identiques](https://dequeuniversity.com/rules/axe/4.9/identical-links-same-purpose)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "uses-passive-event-listeners": {
+      "id": "uses-passive-event-listeners",
+      "title": "La page utilise des écouteurs d'événements passifs pour améliorer les performances de défilement",
+      "description": "Envisagez de marquer vos écouteurs d'événements tactiles et à la molette comme `passive` pour améliorer les performances de défilement de votre page. [En savoir plus sur l'utilisation d'écouteurs d'événements passifs](https://developer.chrome.com/docs/lighthouse/best-practices/uses-passive-event-listeners/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "script-treemap-data": {
+      "id": "script-treemap-data",
+      "title": "Script Treemap Data",
+      "description": "Used for treemap app",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "nodes": [
+          {
+            "name": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "resourceBytes": 89476,
+            "unusedBytes": 43420
+          },
+          {
+            "resourceBytes": 84640,
+            "unusedBytes": 41385,
+            "name": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"
+          },
+          {
+            "name": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js",
+            "unusedBytes": 0,
+            "resourceBytes": 664
+          }
+        ],
+        "type": "treemap-data"
+      }
+    },
+    "html-has-lang": {
+      "id": "html-has-lang",
+      "title": "L'élément `<html>` n'a pas d'attribut `[lang]`",
+      "description": "Lorsqu'une page ne spécifie pas d'attribut `lang`, les lecteurs d'écran considèrent qu'elle est rédigée dans la langue par défaut sélectionnée au moment de leur configuration par l'utilisateur. Si la page n'est pas rédigée dans cette langue par défaut, les lecteurs d'écran risquent de ne pas énoncer correctement son contenu. [En savoir plus sur l'attribut `lang`](https://dequeuniversity.com/rules/axe/4.9/html-has-lang)",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute",
+              "path": "0,HTML",
+              "selector": "html",
+              "lhId": "1-0-HTML",
+              "nodeLabel": "html",
+              "snippet": "<html>",
+              "boundingRect": {
+                "left": 0,
+                "right": 980,
+                "top": 0,
+                "height": 1957,
+                "bottom": 1957,
+                "width": 980
+              }
+            }
+          }
+        ],
+        "type": "table",
+        "debugData": {
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "impact": "serious",
+          "type": "debugdata"
+        },
+        "headings": [
+          {
+            "valueType": "node",
+            "subItemsHeading": {
+              "valueType": "node",
+              "key": "relatedNode"
+            },
+            "key": "node",
+            "label": "Éléments non conformes"
+          }
+        ]
+      }
+    },
+    "redirects-http": {
+      "id": "redirects-http",
+      "title": "Redirects HTTP traffic to HTTPS",
+      "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "offscreen-images": {
+      "id": "offscreen-images",
+      "title": "Différez le chargement des images hors écran",
+      "description": "Envisagez de charger des images masquées ou hors écran après le chargement de toutes les ressources essentielles afin de réduire le délai avant interactivité. [Découvrez comment différer les images hors écran.](https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "debugData": {
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          },
+          "type": "debugdata"
+        },
+        "headings": [],
+        "items": [],
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "type": "opportunity"
+      },
+      "warnings": [],
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "target-size": {
+      "id": "target-size",
+      "title": "La taille et l'espacement des zones cibles tactiles sont suffisants.",
+      "description": "Les zones cibles tactiles dont la taille et l'espacement sont suffisants aident les utilisateurs qui peuvent avoir des difficultés à se servir de petites commandes à activer les zones cibles. [En savoir plus sur les zones cibles tactiles](https://dequeuniversity.com/rules/axe/4.9/target-size)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "final-screenshot": {
+      "id": "final-screenshot",
+      "title": "Final Screenshot",
+      "description": "The last screenshot captured of the pageload.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "data": "data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=",
+        "timing": 2781,
+        "timestamp": 2792329202364,
+        "type": "screenshot"
+      }
+    },
+    "label": {
+      "id": "label",
+      "title": "Les éléments de formulaire sont associés à des libellés",
+      "description": "Les libellés permettent de s'assurer que les éléments de contrôle des formulaires sont énoncés correctement par les technologies d'assistance, comme les lecteurs d'écran. [En savoir plus sur les libellés d'éléments de formulaires](https://dequeuniversity.com/rules/axe/4.9/label)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "image-alt": {
+      "id": "image-alt",
+      "title": "Les éléments d'image possèdent des attributs `[alt]`",
+      "description": "Les éléments informatifs doivent contenir un texte de substitution court et descriptif. L'attribut alt peut rester vide pour les éléments décoratifs. [En savoir plus sur l'attribut `alt`](https://dequeuniversity.com/rules/axe/4.9/image-alt)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "prioritize-lcp-image": {
+      "id": "prioritize-lcp-image",
+      "title": "Précharger l'image Largest Contentful Paint",
+      "description": "Si l'élément LCP est ajouté de façon dynamique à la page, préchargez l'image pour améliorer le LCP. [En savoir plus sur le préchargement d'éléments LCP](https://web.dev/articles/optimize-lcp#optimize_when_the_resource_is_discovered)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "focusable-controls": {
+      "id": "focusable-controls",
+      "title": "Interactive controls are keyboard focusable",
+      "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn how to make custom controls focusable](https://developer.chrome.com/docs/lighthouse/accessibility/focusable-controls/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "is-on-https": {
+      "id": "is-on-https",
+      "title": "Requêtes HTTPS",
+      "description": "Tous les sites doivent être protégés par le protocole HTTPS, même ceux qui ne traitent pas de données sensibles. Par conséquent, vous devez éviter le [contenu mixte](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), qui provoque le chargement de certaines ressources sur HTTP bien que la demande initiale soit diffusée via HTTPS. Le protocole HTTPS empêche les intrus de détourner ou d’écouter passivement les communications entre votre appli et les utilisateurs. Il constitue également une condition préalable à l'utilisation de HTTP/2 et de nombreuses nouvelles API de plates-formes Web. [En savoir plus sur le protocole HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "non-composited-animations": {
+      "id": "non-composited-animations",
+      "title": "Éviter les animations non composées",
+      "description": "Les animations non composées peuvent être lentes et augmenter le CLS. [Découvrez comment éviter les animations non composées.](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "inspector-issues": {
+      "id": "inspector-issues",
+      "title": "Aucun problème dans le panneau `Issues` des outils de développement Chrome",
+      "description": "Les problèmes enregistrés dans le panneau `Issues` des outils de développement Chrome indiquent des problèmes non résolus. Ceux-ci peuvent être dus à des requêtes réseau qui ont échoué, à des contrôles de sécurité insuffisants ou à d'autres problèmes du navigateur. Ouvrez le panneau \"Issues\" dans les outils de développement Chrome pour en savoir plus sur chaque problème.",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      }
+    },
+    "first-contentful-paint": {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "description": "La métrique \"First Contentful Paint\" indique le moment où le premier texte ou la première image sont affichés. [En savoir plus sur cette métrique](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)",
+      "score": 0.83,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "2,0 s",
+      "numericValue": 2038.7938260851333,
+      "numericUnit": "millisecond"
+    },
+    "meta-description": {
+      "id": "meta-description",
+      "title": "Le document ne contient pas d'attribut \"meta description\"",
+      "description": "Les résultats de recherche peuvent inclure des attributs \"meta description\" pour résumer de façon concise le contenu de la page. [En savoir plus sur la meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/)",
+      "score": 0,
+      "scoreDisplayMode": "binary"
+    },
+    "managed-focus": {
+      "id": "managed-focus",
+      "title": "The user's focus is directed to new content added to the page",
+      "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn how to direct focus to new content](https://developer.chrome.com/docs/lighthouse/accessibility/managed-focus/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "errors-in-console": {
+      "id": "errors-in-console",
+      "title": "Aucune erreur de navigateur enregistrée dans la console",
+      "description": "Les erreurs enregistrées dans la console indiquent des problèmes non résolus. Ceux-ci peuvent être dus à des requêtes réseau qui ont échoué et à d'autres problèmes du navigateur. [En savoir plus sur ces erreurs dans l'audit de diagnostic de la console](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "interactive-element-affordance": {
+      "id": "interactive-element-affordance",
+      "title": "Interactive elements indicate their purpose and state",
+      "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn how to decorate interactive elements with affordance hints](https://developer.chrome.com/docs/lighthouse/accessibility/interactive-element-affordance/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "table-duplicate-name": {
+      "id": "table-duplicate-name",
+      "title": "Le contenu des tables dans l'attribut \"summary\" et dans `<caption>` est différent.",
+      "description": "L'attribut \"summary\" doit décrire la structure de la table, tandis que `<caption>` doit spécifier le titre à l'écran. Un balisage de table précis aide les utilisateurs de lecteur d'écran. [En savoir plus sur les attributs \"summary\" et \"caption\"](https://dequeuniversity.com/rules/axe/4.9/table-duplicate-name)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "image-size-responsive": {
+      "id": "image-size-responsive",
+      "title": "Images diffusées dans la résolution appropriée",
+      "description": "Pour que la clarté de l'image soit optimale, ses dimensions naturelles doivent être proportionnelles à la taille d'affichage et au taux de pixels. [Découvrez comment fournir des images responsives.](https://web.dev/articles/serve-responsive-images)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "speed-index": {
+      "id": "speed-index",
+      "title": "Speed Index",
+      "description": "La métrique \"Speed Index\" indique la rapidité avec laquelle le contenu d'une page est disponible. [En savoir plus sur cette métrique](https://developer.chrome.com/docs/lighthouse/performance/speed-index/)",
+      "score": 0.69,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "4,7 s",
+      "numericValue": 4658.7759602122915,
+      "numericUnit": "millisecond"
+    },
+    "skip-link": {
+      "id": "skip-link",
+      "title": "Les liens d'ancrage sont sélectionnables.",
+      "description": "Ajouter un lien d'ancrage permet aux utilisateurs de passer plus rapidement au contenu principal. [En savoir plus sur les liens d'ancrage](https://dequeuniversity.com/rules/axe/4.9/skip-link)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "unminified-javascript": {
+      "id": "unminified-javascript",
+      "title": "Réduisez la taille des ressources JavaScript",
+      "description": "La minimisation des fichiers JavaScript peut réduire la taille des charges utiles et la durée d'analyse des scripts. [Découvrez comment les minimiser.](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "items": [],
+        "headings": [],
+        "type": "opportunity",
+        "debugData": {
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          },
+          "type": "debugdata"
+        },
+        "sortedBy": [
+          "wastedBytes"
+        ]
+      },
+      "warnings": [],
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "total-byte-weight": {
+      "id": "total-byte-weight",
+      "title": "Éviter d'énormes charges utiles de réseau",
+      "description": "Les charges utiles des grands réseaux coûtent de l'argent réel aux utilisateurs et sont fortement corrélées aux délais de chargement interminables. [Découvrez comment réduire la taille des charges utiles.](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "La taille totale était de 66 Kio",
+      "details": {
+        "type": "table",
+        "sortedBy": [
+          "totalBytes"
+        ],
+        "items": [
+          {
+            "totalBytes": 31984,
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+          },
+          {
+            "totalBytes": 28635,
+            "url": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"
+          },
+          {
+            "url": "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css",
+            "totalBytes": 2717
+          },
+          {
+            "url": "https://cdn.datatables.net/1.10.21/images/sort_both.png",
+            "totalBytes": 1075
+          },
+          {
+            "totalBytes": 1036,
+            "url": "https://cdn.datatables.net/1.10.21/images/sort_asc.png"
+          },
+          {
+            "totalBytes": 792,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js"
+          },
+          {
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+            "totalBytes": 735
+          },
+          {
+            "url": "https://kasa.rodolphe.mingo.qc.lu/app.css",
+            "totalBytes": 666
+          }
+        ],
+        "headings": [
+          {
+            "valueType": "url",
+            "key": "url",
+            "label": "URL"
+          },
+          {
+            "valueType": "bytes",
+            "key": "totalBytes",
+            "label": "Taille de transfert"
+          }
+        ]
+      },
+      "numericValue": 67640,
+      "numericUnit": "byte"
+    },
+    "duplicated-javascript": {
+      "id": "duplicated-javascript",
+      "title": "Supprimez les modules en double dans les groupes JavaScript",
+      "description": "Supprimez les modules JavaScript volumineux et en double de vos groupes pour réduire les débits d'octets superflus sur le réseau. ",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          }
+        },
+        "type": "opportunity",
+        "headings": [],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 0,
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "items": []
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "charset": {
+      "id": "charset",
+      "title": "La déclaration de charset est manquante ou intervient trop tard dans le code HTML",
+      "description": "La déclaration d'encodage des caractères est obligatoire. Elle peut être effectuée avec une balise `<meta>` dans les 1 024 premiers octets du code HTML, ou dans l'en-tête de réponse HTTP Content-Type. [Découvrez comment déclarer l'encodage des caractères.](https://developer.chrome.com/docs/lighthouse/best-practices/charset/)",
+      "score": 0,
+      "scoreDisplayMode": "binary"
+    },
+    "image-aspect-ratio": {
+      "id": "image-aspect-ratio",
+      "title": "Images affichées au bon format",
+      "description": "Les dimensions d'affichage des images doivent correspondre au format naturel. [En savoir plus sur le format de l'image](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "type": "table",
+        "headings": []
+      }
+    },
+    "aria-hidden-body": {
+      "id": "aria-hidden-body",
+      "title": "`[aria-hidden=\"true\"]` ne figure pas sur le document `<body>`",
+      "description": "Les technologies d'assistance, telles que les lecteurs d'écran, présentent un fonctionnement irrégulier lorsque `aria-hidden=\"true\"` est défini sur l'élément `<body>` du document. [Découvrez comment `aria-hidden` affecte le corps du document.](https://dequeuniversity.com/rules/axe/4.9/aria-hidden-body)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [],
+        "headings": []
+      }
+    },
+    "aria-tooltip-name": {
+      "id": "aria-tooltip-name",
+      "title": "Les éléments ARIA `tooltip` ont des noms accessibles",
+      "description": "Lorsqu'un élément info-bulle n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [Découvrez comment nommer des éléments `tooltip`.](https://dequeuniversity.com/rules/axe/4.9/aria-tooltip-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-required-attr": {
+      "id": "aria-required-attr",
+      "title": "Tous les éléments `[role]` contiennent les attributs `[aria-*]` requis",
+      "description": "Certains rôles ARIA ont des attributs obligatoires qui décrivent l'état de l'élément aux lecteurs d'écran. [En savoir plus sur les rôles et les attributs obligatoires](https://dequeuniversity.com/rules/axe/4.9/aria-required-attr)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      }
+    },
+    "landmark-one-main": {
+      "id": "landmark-one-main",
+      "title": "Le document contient un repère principal",
+      "description": "L'un des repères principaux permet aux utilisateurs de lecteurs d'écran de naviguer sur une page Web. [En savoir plus sur les repères](https://dequeuniversity.com/rules/axe/4.9/landmark-one-main)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "items": [
+          {
+            "node": {
+              "nodeLabel": "html",
+              "lhId": "1-0-HTML",
+              "path": "0,HTML",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark",
+              "selector": "html",
+              "boundingRect": {
+                "left": 0,
+                "top": 0,
+                "right": 980,
+                "bottom": 1957,
+                "width": 980,
+                "height": 1957
+              },
+              "type": "node",
+              "snippet": "<html>"
+            }
+          }
+        ],
+        "debugData": {
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "type": "debugdata",
+          "impact": "moderate"
+        },
+        "type": "table",
+        "headings": [
+          {
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "key": "node",
+            "label": "Éléments non conformes"
+          }
+        ]
+      }
+    },
+    "meta-viewport": {
+      "id": "meta-viewport",
+      "title": "`[user-scalable=\"no\"]` n'est pas utilisé dans l'élément `<meta name=\"viewport\">`, et l'attribut `[maximum-scale]` n'est pas inférieur à 5.",
+      "description": "Désactiver le zoom est problématique pour les utilisateurs malvoyants qui ont besoin d'agrandir le contenu d'une page Web pour le voir correctement. [En savoir plus sur la balise Meta viewport](https://dequeuniversity.com/rules/axe/4.9/meta-viewport)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "image-redundant-alt": {
+      "id": "image-redundant-alt",
+      "title": "Les éléments d'image ne comportent pas d'attributs `[alt]` correspondant à du texte redondant.",
+      "description": "Les éléments informatifs doivent contenir un texte de substitution court et descriptif. Un texte de substitution identique au texte situé à côté du lien ou de l'image peut prêter à confusion pour les utilisateurs se servant d'un lecteur d'écran, car le texte est lu deux fois. [En savoir plus sur l'attribut `alt`](https://dequeuniversity.com/rules/axe/4.9/image-redundant-alt)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-prohibited-attr": {
+      "id": "aria-prohibited-attr",
+      "title": "Elements use only permitted ARIA attributes",
+      "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.9/aria-prohibited-attr).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "dom-size": {
+      "id": "dom-size",
+      "title": "Éviter une taille excessive de DOM",
+      "description": "Un grand DOM sollicite davantage la mémoire, et entraîne de plus longs [calculs de style](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) et de coûteux [ajustements de la mise en page](https://developers.google.com/speed/articles/reflow). [Découvrez comment éviter une taille de DOM excessive.](https://developer.chrome.com/docs/lighthouse/performance/dom-size/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "34 éléments",
+      "details": {
+        "headings": [
+          {
+            "label": "Statistique",
+            "key": "statistic",
+            "valueType": "text"
+          },
+          {
+            "valueType": "node",
+            "key": "node",
+            "label": "Élément"
+          },
+          {
+            "key": "value",
+            "valueType": "numeric",
+            "label": "Valeur"
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "value": {
+              "type": "numeric",
+              "value": 34,
+              "granularity": 1
+            },
+            "statistic": "Nombre total d'éléments DOM"
+          },
+          {
+            "value": {
+              "value": 7,
+              "type": "numeric",
+              "granularity": 1
+            },
+            "statistic": "Profondeur maximum de DOM",
+            "node": {
+              "type": "node",
+              "path": "0,HTML,1,BODY,0,DIV,1,DIV,0,DIV,0,LABEL,1,SELECT,0,OPTION",
+              "lhId": "1-5-OPTION",
+              "selector": "div#employee-table_length > label > select > option",
+              "nodeLabel": "10",
+              "boundingRect": {
+                "right": 0,
+                "width": 0,
+                "top": 0,
+                "left": 0,
+                "bottom": 0,
+                "height": 0
+              },
+              "snippet": "<option value=\"10\">"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-TR",
+              "boundingRect": {
+                "width": 886,
+                "right": 933,
+                "top": 135,
+                "height": 39,
+                "left": 47,
+                "bottom": 174
+              },
+              "snippet": "<tr role=\"row\">",
+              "nodeLabel": "First Name\tLast Name\tStart Date\tDepartment\tDate of Birth\tStreet\tCity\tState\tZip …",
+              "path": "0,HTML,1,BODY,0,DIV,1,DIV,2,TABLE,0,THEAD,0,TR",
+              "selector": "div#employee-table_wrapper > table#employee-table > thead > tr"
+            },
+            "value": {
+              "granularity": 1,
+              "value": 9,
+              "type": "numeric"
+            },
+            "statistic": "Nombre maximal d'éléments enfants"
+          }
+        ]
+      },
+      "numericValue": 34,
+      "numericUnit": "element"
+    },
+    "csp-xss": {
+      "id": "csp-xss",
+      "title": "Garantir l'efficacité de la CSP contre les attaques XSS",
+      "description": "Une CSP (Content Security Policy) efficace réduit considérablement le risque d'attaques de script intersites (XSS). [Découvrez comment utiliser une CSP pour empêcher les attaques XSS.](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "valueType": "text",
+            "label": "Description",
+            "subItemsHeading": {
+              "key": "description"
+            },
+            "key": "description"
+          },
+          {
+            "key": "directive",
+            "label": "Directive",
+            "valueType": "code",
+            "subItemsHeading": {
+              "key": "directive"
+            }
+          },
+          {
+            "valueType": "text",
+            "subItemsHeading": {
+              "key": "severity"
+            },
+            "label": "Gravité",
+            "key": "severity"
+          }
+        ],
+        "items": [
+          {
+            "description": "Aucune CSP trouvée en mode de mise en conformité",
+            "severity": "Élevée"
+          }
+        ]
+      }
+    },
+    "efficient-animated-content": {
+      "id": "efficient-animated-content",
+      "title": "Utilisez des formats vidéo pour le contenu animé",
+      "description": "Les grandes images GIF sont inefficaces pour diffuser du contenu animé. Envisagez d'utiliser des vidéos MPEG4/WebM pour les animations et PNG/WebP pour les images statiques au lieu d'images GIF afin d'économiser des octets réseau. [En savoir plus sur les formats vidéo efficaces](https://developer.chrome.com/docs/lighthouse/performance/efficient-animated-content/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "items": [],
+        "overallSavingsMs": 0,
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "headings": [],
+        "type": "opportunity",
+        "overallSavingsBytes": 0
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "notification-on-start": {
+      "id": "notification-on-start",
+      "title": "Aucune autorisation d'envoi de notifications n'est demandée au chargement de la page",
+      "description": "Les utilisateurs se méfient des sites qui demandent à envoyer des notifications sans contexte. Envisagez plutôt d'associer la demande à des gestes de l'utilisateur. [Découvrez comment obtenir de façon responsable une autorisation pour les notifications.](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "video-caption": {
+      "id": "video-caption",
+      "title": "Les éléments `<video>` contiennent un élément `<track>` avec `[kind=\"captions\"]`",
+      "description": "Le fait d'ajouter des sous-titres à une vidéo rend celle-ci plus accessible aux personnes sourdes et malentendantes. [En savoir plus sur les sous-titres de vidéos](https://dequeuniversity.com/rules/axe/4.9/video-caption)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "geolocation-on-start": {
+      "id": "geolocation-on-start",
+      "title": "Aucune autorisation de géolocalisation n'est demandée au chargement de la page",
+      "description": "Les utilisateurs se méfient des sites qui demandent leur position sans contexte. Envisagez plutôt d'associer la demande à une action de l'utilisateur. [En savoir plus sur l'autorisation de géolocalisation](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "input-image-alt": {
+      "id": "input-image-alt",
+      "title": "Les éléments `<input type=\"image\">` contiennent du texte `[alt]`",
+      "description": "Lorsqu'une image est utilisée comme bouton `<input>`, vous pouvez aider les utilisateurs de lecteurs d'écran à comprendre son utilité en ajoutant un texte de substitution. [En savoir plus sur le texte de substitution d'une image d'entrée](https://dequeuniversity.com/rules/axe/4.9/input-image-alt)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "visual-order-follows-dom": {
+      "id": "visual-order-follows-dom",
+      "title": "Visual order on the page follows DOM order",
+      "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more about DOM and visual ordering](https://developer.chrome.com/docs/lighthouse/accessibility/visual-order-follows-dom/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "critical-request-chains": {
+      "id": "critical-request-chains",
+      "title": "Évitez de créer des chaînes de requêtes critiques",
+      "description": "Les chaînes de demandes critiques ci-dessous vous montrent quelles ressources sont chargées avec une priorité élevée. Envisagez de réduire la longueur des chaînes et la taille de téléchargement des ressources ou de reporter le téléchargement de ressources inutiles afin d'améliorer le chargement des pages. [Découvrez comment éviter de créer des chaînes de demandes critiques.](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "5 chaînes trouvées",
+      "details": {
+        "chains": {
+          "A86605A48FB896BF2543C78BC93F65B6": {
+            "children": {
+              "53.3": {
+                "request": {
+                  "url": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js",
+                  "startTime": 2792327.7641,
+                  "endTime": 2792327.812751,
+                  "transferSize": 28635,
+                  "responseReceivedTime": 2792327.812743
+                }
+              },
+              "53.2": {
+                "request": {
+                  "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+                  "transferSize": 31984,
+                  "endTime": 2792327.787467,
+                  "responseReceivedTime": 2792327.7874580002,
+                  "startTime": 2792327.763464
+                }
+              },
+              "53.5": {
+                "request": {
+                  "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js",
+                  "endTime": 2792328.986429,
+                  "transferSize": 792,
+                  "responseReceivedTime": 2792328.986422,
+                  "startTime": 2792327.774655
+                }
+              },
+              "53.4": {
+                "request": {
+                  "url": "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css",
+                  "responseReceivedTime": 2792327.815604,
+                  "startTime": 2792327.764211,
+                  "transferSize": 2717,
+                  "endTime": 2792327.815611
+                }
+              },
+              "53.6": {
+                "request": {
+                  "url": "https://kasa.rodolphe.mingo.qc.lu/app.css",
+                  "startTime": 2792327.777928,
+                  "endTime": 2792327.8673789995,
+                  "transferSize": 666,
+                  "responseReceivedTime": 2792327.8673730004
+                }
+              }
+            },
+            "request": {
+              "responseReceivedTime": 2792327.7469949997,
+              "endTime": 2792327.747001,
+              "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+              "transferSize": 735,
+              "startTime": 2792326.422514
+            }
+          }
+        },
+        "longestChain": {
+          "length": 2,
+          "transferSize": 792,
+          "duration": 2563.914999961853
+        },
+        "type": "criticalrequestchain"
+      }
+    },
+    "mainthread-work-breakdown": {
+      "id": "mainthread-work-breakdown",
+      "title": "Réduire le travail du thread principal",
+      "description": "Envisagez de réduire le temps consacré à l'analyse, la compilation et l'exécution de JavaScript. La livraison de charges utiles JavaScript plus petites peut vous aider. [Découvrez comment réduire le travail du thread principal.](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "0,9 s",
+      "details": {
+        "sortedBy": [
+          "duration"
+        ],
+        "items": [
+          {
+            "duration": 468.5759999999996,
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation"
+          },
+          {
+            "groupLabel": "Other",
+            "group": "other",
+            "duration": 206.50000000000006
+          },
+          {
+            "duration": 89.84800000000001,
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout"
+          },
+          {
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 71.992,
+            "group": "parseHTML"
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 31.939999999999994,
+            "groupLabel": "Rendering"
+          },
+          {
+            "groupLabel": "Script Parsing & Compilation",
+            "group": "scriptParseCompile",
+            "duration": 16.148
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "valueType": "text",
+            "key": "groupLabel",
+            "label": "Catégorie"
+          },
+          {
+            "label": "Temps passé",
+            "valueType": "ms",
+            "key": "duration",
+            "granularity": 1
+          }
+        ]
+      },
+      "numericValue": 885.0039999999997,
+      "numericUnit": "millisecond"
+    },
+    "aria-treeitem-name": {
+      "id": "aria-treeitem-name",
+      "title": "Les éléments ARIA `treeitem` ont des noms accessibles",
+      "description": "Lorsqu'un élément `treeitem` n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [En savoir plus sur l'ajout de libellé aux éléments `treeitem`](https://dequeuniversity.com/rules/axe/4.9/aria-treeitem-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "main-thread-tasks": {
+      "id": "main-thread-tasks",
+      "title": "Tasks",
+      "description": "Lists the toplevel main thread tasks that executed during page load.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "granularity": 1,
+            "label": "Start Time",
+            "valueType": "ms",
+            "key": "startTime"
+          },
+          {
+            "valueType": "ms",
+            "granularity": 1,
+            "label": "End Time",
+            "key": "duration"
+          }
+        ],
+        "items": [
+          {
+            "duration": 24.937,
+            "startTime": 1329.724
+          },
+          {
+            "startTime": 1386.348,
+            "duration": 18.514
+          },
+          {
+            "duration": 14.045,
+            "startTime": 1406.122
+          },
+          {
+            "duration": 9.502,
+            "startTime": 1423.087
+          },
+          {
+            "duration": 16.196,
+            "startTime": 2568.143
+          },
+          {
+            "duration": 100.061,
+            "startTime": 2586.219
+          },
+          {
+            "startTime": 2686.674,
+            "duration": 8.7
+          }
+        ]
+      }
+    },
+    "html-xml-lang-mismatch": {
+      "id": "html-xml-lang-mismatch",
+      "title": "L'élément `<html>` comporte un attribut `[xml:lang]` avec la même langue de base que l'attribut `[lang]`.",
+      "description": "Si la langue de la page Web n'est pas spécifiée de manière cohérente, le lecteur d'écran risque de ne pas énoncer correctement le texte de la page. [En savoir plus sur l'attribut `lang`](https://dequeuniversity.com/rules/axe/4.9/html-xml-lang-mismatch)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "custom-controls-labels": {
+      "id": "custom-controls-labels",
+      "title": "Custom controls have associated labels",
+      "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more about custom controls and labels](https://developer.chrome.com/docs/lighthouse/accessibility/custom-controls-labels/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "cumulative-layout-shift": {
+      "id": "cumulative-layout-shift",
+      "title": "Cumulative Layout Shift",
+      "description": "Cumulative Layout Shift mesure le mouvement des éléments visibles dans la fenêtre d'affichage. [En savoir plus sur cette métrique](https://web.dev/articles/cls)",
+      "score": 1,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "0",
+      "details": {
+        "items": [
+          {
+            "cumulativeLayoutShiftMainFrame": 0.00006164445052678199,
+            "newEngineResult": {
+              "cumulativeLayoutShiftMainFrame": 0.00006164445052678199,
+              "cumulativeLayoutShift": 0.00006164445052678199
+            },
+            "newEngineResultDiffered": false
+          }
+        ],
+        "type": "debugdata"
+      },
+      "numericValue": 0.00006164445052678199,
+      "numericUnit": "unitless"
+    },
+    "unminified-css": {
+      "id": "unminified-css",
+      "title": "Réduisez la taille des ressources CSS",
+      "description": "La minimisation des fichiers CSS peut réduire la taille des charges utiles de réseau. [Découvrez comment minimiser des fichiers CSS.](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "overallSavingsBytes": 0,
+        "headings": [],
+        "items": [],
+        "type": "opportunity",
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "overallSavingsMs": 0,
+        "sortedBy": [
+          "wastedBytes"
+        ]
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "select-name": {
+      "id": "select-name",
+      "title": "Certains éléments sont associés à des éléments de libellé.",
+      "description": "Les éléments de formulaire sans libellé efficace peuvent créer une expérience frustrante pour les utilisateurs de lecteurs d'écran. [En savoir plus sur l'élément `select`](https://dequeuniversity.com/rules/axe/4.9/select-name)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "td-headers-attr": {
+      "id": "td-headers-attr",
+      "title": "Les cellules d'un élément `<table>` qui utilisent l'attribut `[headers]` font référence à des cellules figurant dans le même tableau.",
+      "description": "Les lecteurs d'écran proposent des fonctionnalités qui permettent de naviguer plus simplement dans les tableaux. En vous assurant que les cellules `<td>` qui comportent l'attribut `[headers]` fassent référence à d'autres cellules dans le même tableau uniquement, vous pourrez améliorer l'expérience des utilisateurs de lecteurs d'écran. [En savoir plus sur l'attribut `headers`](https://dequeuniversity.com/rules/axe/4.9/td-headers-attr)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "paste-preventing-inputs": {
+      "id": "paste-preventing-inputs",
+      "title": "Autoriser les utilisateurs à coller du texte dans les champs de saisie",
+      "description": "Empêcher la saisie par collage est une mauvaise pratique pour l'expérience utilisateur qui affaiblit la sécurité en bloquant les gestionnaires de mots de passe.[En savoir plus sur les champs de saisie faciles à utiliser](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "use-landmarks": {
+      "id": "use-landmarks",
+      "title": "HTML5 landmark elements are used to improve navigation",
+      "description": "Landmark elements (`<main>`, `<nav>`, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more about landmark elements](https://developer.chrome.com/docs/lighthouse/accessibility/use-landmarks/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "table-fake-caption": {
+      "id": "table-fake-caption",
+      "title": "Les tableaux utilisent `<caption>` au lieu de cellules avec l'attribut `[colspan]` pour indiquer une légende.",
+      "description": "Les lecteurs d'écran proposent des fonctionnalités qui permettent de naviguer plus simplement dans les tableaux. Vous pouvez améliorer l'expérience des utilisateurs de lecteurs d'écran en vous assurant que les tableaux utilisent bien l'élément de sous-titres au lieu de cellules avec l'attribut `[colspan]`. [En savoir plus sur les légendes](https://dequeuniversity.com/rules/axe/4.9/table-fake-caption)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      }
+    },
+    "duplicate-id-aria": {
+      "id": "duplicate-id-aria",
+      "title": "Les ID ARIA sont uniques",
+      "description": "La valeur d'un ID ARIA doit être unique afin que les différentes instances soient toutes prises en compte par les technologies d'assistance. [Découvrez comment résoudre les problèmes d'ID ARIA en double.](https://dequeuniversity.com/rules/axe/4.9/duplicate-id-aria)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "offscreen-content-hidden": {
+      "id": "offscreen-content-hidden",
+      "title": "Offscreen content is hidden from assistive technology",
+      "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn how to properly hide offscreen content](https://developer.chrome.com/docs/lighthouse/accessibility/offscreen-content-hidden/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "network-rtt": {
+      "id": "network-rtt",
+      "title": "Délai aller-retour réseau",
+      "description": "Les délais aller-retour (DAR) du réseau ont un impact important sur les performances. Si le DAR par rapport à un point d'origine est élevé, cela signifie que les performances des serveurs proches de l'utilisateur peuvent sans doute être améliorées. [En savoir plus sur le délai aller-retour](https://hpbn.co/primer-on-latency-and-bandwidth/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "10 ms",
+      "details": {
+        "headings": [
+          {
+            "valueType": "text",
+            "label": "URL",
+            "key": "origin"
+          },
+          {
+            "granularity": 1,
+            "key": "rtt",
+            "valueType": "ms",
+            "label": "Temps passé"
+          }
+        ],
+        "items": [
+          {
+            "origin": "https://kasa.rodolphe.mingo.qc.lu",
+            "rtt": 9.933607500000004
+          },
+          {
+            "rtt": 0.0024044862778253564,
+            "origin": "https://cdn.datatables.net"
+          },
+          {
+            "origin": "https://ajax.googleapis.com",
+            "rtt": 0.002332138288937753
+          }
+        ],
+        "type": "table",
+        "sortedBy": [
+          "rtt"
+        ]
+      },
+      "numericValue": 9.933607500000004,
+      "numericUnit": "millisecond"
+    },
+    "th-has-data-cells": {
+      "id": "th-has-data-cells",
+      "title": "Les éléments `<th>` et ceux portant l'attribut `[role=\"columnheader\"/\"rowheader\"]` décrivent des cellules de données.",
+      "description": "Les lecteurs d'écran proposent des fonctionnalités qui permettent de naviguer plus simplement dans les tableaux. En vous assurant que les en-têtes de tableaux fassent toujours référence à un ensemble de cellules spécifique, vous pourrez améliorer l'expérience des utilisateurs de lecteurs d'écran. [En savoir plus sur les en-têtes de tableaux](https://dequeuniversity.com/rules/axe/4.9/th-has-data-cells)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-valid-attr-value": {
+      "id": "aria-valid-attr-value",
+      "title": "Les attributs `[aria-*]` ont des valeurs valides",
+      "description": "Les technologies d'assistance telles que les lecteurs d'écran ne peuvent pas interpréter les attributs ARIA si leurs valeurs ne sont pas valides. [En savoir plus sur les valeurs valides des attributs ARIA](https://dequeuniversity.com/rules/axe/4.9/aria-valid-attr-value)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "aria-roles": {
+      "id": "aria-roles",
+      "title": "Les valeurs `[role]` sont valides",
+      "description": "Les rôles ARIA doivent comporter des valeurs valides afin de remplir correctement leurs fonctions d'accessibilité. [En savoir plus sur les rôles ARIA valides](https://dequeuniversity.com/rules/axe/4.9/aria-roles)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      }
+    },
+    "largest-contentful-paint": {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "description": "La métrique \"Largest Contentful Paint\" indique le moment où le texte le plus long ou l'image la plus grande sont affichés. [En savoir plus sur cette métrique](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "score": 0.95,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "2,1 s",
+      "numericValue": 2138.7938260851333,
+      "numericUnit": "millisecond"
+    },
+    "layout-shifts": {
+      "id": "layout-shifts",
+      "title": "Éviter les changements de mise en page importants",
+      "description": "Voici les décalages de mise en page les plus importants observés sur la page. Chaque élément du tableau représente un unique décalage de mise en page et montre l'élément qui a été le plus décalé. Des causes possibles du décalage de mise en page se trouvent sous chaque élément. Il est possible que certains de ces décalages de mise en page ne soient pas inclus dans la valeur de la métrique CLS en raison du [fenêtrage](https://web.dev/articles/cls#what_is_cls). [Découvrez comment améliorer le CLS.](https://web.dev/articles/optimize-cls)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "1 décalage de mise en page trouvé",
+      "details": {
+        "type": "table",
+        "items": [
+          {
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "extra": {
+                    "value": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js",
+                    "type": "url"
+                  },
+                  "cause": "Une requête réseau tardive a ajusté la mise en page"
+                }
+              ]
+            },
+            "node": {
+              "path": "0,HTML,1,BODY,0,DIV,2,A",
+              "lhId": "page-1-A",
+              "snippet": "<a href=\"index.html\">",
+              "boundingRect": {
+                "height": 18,
+                "right": 510,
+                "width": 39,
+                "bottom": 267,
+                "left": 470,
+                "top": 249
+              },
+              "type": "node",
+              "nodeLabel": "Home",
+              "selector": "body > div#employee-div > a"
+            },
+            "score": 0.00006164445052678199
+          }
+        ],
+        "headings": [
+          {
+            "key": "node",
+            "label": "Élément",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "extra"
+            }
+          },
+          {
+            "label": "Score de décalage de mise en page",
+            "granularity": 0.001,
+            "subItemsHeading": {
+              "key": "cause",
+              "valueType": "text"
+            },
+            "valueType": "numeric",
+            "key": "score"
+          }
+        ]
+      }
+    },
+    "meta-refresh": {
+      "id": "meta-refresh",
+      "title": "Le document n'utilise pas de balise Meta `<meta http-equiv=\"refresh\">`",
+      "description": "Les utilisateurs ne s'attendent pas à ce qu'une page s'actualise automatiquement. De plus, lorsque cela se produit, le curseur est aussitôt repositionné en haut de la page. Cela peut générer de la frustration et perturber l'expérience utilisateur. [En savoir plus sur la balise Meta refresh](https://dequeuniversity.com/rules/axe/4.9/meta-refresh)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "third-party-facades": {
+      "id": "third-party-facades",
+      "title": "Ressources tierces pouvant être chargées de façon différée avec des façades",
+      "description": "Certaines intégrations tierces peuvent être chargées de manière différée. Vous pouvez envisager de les remplacer par une façade tant qu'elles ne sont pas requises. [Découvrez comment différer le chargement de codes tiers par une façade.](https://developer.chrome.com/docs/lighthouse/performance/third-party-facades/)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-required-children": {
+      "id": "aria-required-children",
+      "title": "Les éléments ayant un `[role]` ARIA, qui exigent que les enfants incluent un `[role]` spécifique, possèdent tous les enfants requis.",
+      "description": "Certains rôles ARIA parents doivent contenir des rôles enfants spécifiques afin de remplir correctement leurs fonctions d'accessibilité. [En savoir plus sur les rôles et les éléments enfants requis](https://dequeuniversity.com/rules/axe/4.9/aria-required-children)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "no-document-write": {
+      "id": "no-document-write",
+      "title": "Évite `document.write()`",
+      "description": "Pour les utilisateurs rencontrant des problèmes de connexion lente, les scripts externes injectés dynamiquement via `document.write()` peuvent retarder le chargement des pages de plusieurs dizaines de secondes. [Découvrez comment éviter document.write().](https://developer.chrome.com/docs/lighthouse/best-practices/no-document-write/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "empty-heading": {
+      "id": "empty-heading",
+      "title": "Tous les éléments de titre ont du contenu.",
+      "description": "Un titre sans contenu ni texte inaccessible empêche les utilisateurs de lecteurs d'écran d'accéder aux informations sur la structure de la page. [En savoir plus sur les titres](https://dequeuniversity.com/rules/axe/4.9/empty-heading)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-required-parent": {
+      "id": "aria-required-parent",
+      "title": "Les éléments `[role]` sont inclus dans l'élément parent approprié",
+      "description": "Certains rôles ARIA enfants doivent être inclus dans un rôle parent spécifique afin de remplir correctement leurs fonctions d'accessibilité. [En savoir plus sur les rôles ARIA et l'élément parent requis](https://dequeuniversity.com/rules/axe/4.9/aria-required-parent)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      }
+    },
+    "network-requests": {
+      "id": "network-requests",
+      "title": "Network Requests",
+      "description": "Lists the network requests that were made during page load.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "networkStartTimeTs": 2792326421406
+        },
+        "items": [
+          {
+            "rendererStartTime": 0,
+            "transferSize": 735,
+            "resourceType": "Document",
+            "networkRequestTime": 1.1079998016357422,
+            "entity": "qc.lu",
+            "statusCode": 200,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.html",
+            "experimentalFromMainFrame": true,
+            "networkEndTime": 1325.5950002670288,
+            "protocol": "h2",
+            "priority": "VeryHigh",
+            "finished": true,
+            "mimeType": "text/html",
+            "resourceSize": 715,
+            "sessionTargetType": "page"
+          },
+          {
+            "rendererStartTime": 1339.3579998016357,
+            "entity": "Google CDN",
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "resourceSize": 89476,
+            "transferSize": 31984,
+            "networkEndTime": 1366.0609998703003,
+            "mimeType": "text/javascript",
+            "sessionTargetType": "page",
+            "statusCode": 200,
+            "protocol": "h2",
+            "finished": true,
+            "experimentalFromMainFrame": true,
+            "networkRequestTime": 1342.058000087738,
+            "priority": "High",
+            "resourceType": "Script"
+          },
+          {
+            "resourceType": "Script",
+            "finished": true,
+            "networkRequestTime": 1342.6939997673035,
+            "priority": "High",
+            "statusCode": 200,
+            "protocol": "h2",
+            "experimentalFromMainFrame": true,
+            "mimeType": "text/javascript",
+            "transferSize": 28635,
+            "sessionTargetType": "page",
+            "url": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js",
+            "networkEndTime": 1391.3449997901917,
+            "resourceSize": 84647,
+            "entity": "datatables.net",
+            "rendererStartTime": 1339.8859996795654
+          },
+          {
+            "rendererStartTime": 1340.1999998092651,
+            "sessionTargetType": "page",
+            "mimeType": "text/css",
+            "networkRequestTime": 1342.8049998283386,
+            "transferSize": 2717,
+            "finished": true,
+            "protocol": "h2",
+            "statusCode": 200,
+            "url": "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css",
+            "entity": "datatables.net",
+            "priority": "VeryHigh",
+            "resourceSize": 13892,
+            "experimentalFromMainFrame": true,
+            "networkEndTime": 1394.204999923706,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "finished": true,
+            "experimentalFromMainFrame": true,
+            "rendererStartTime": 1340.4939994812012,
+            "entity": "qc.lu",
+            "networkEndTime": 2565.0229997634888,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/employee-list.js",
+            "statusCode": 200,
+            "priority": "High",
+            "resourceType": "Script",
+            "resourceSize": 664,
+            "sessionTargetType": "page",
+            "mimeType": "application/javascript",
+            "protocol": "h2",
+            "transferSize": 792,
+            "networkRequestTime": 1353.248999595642
+          },
+          {
+            "entity": "qc.lu",
+            "finished": true,
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "networkRequestTime": 1356.521999835968,
+            "experimentalFromMainFrame": true,
+            "protocol": "h2",
+            "networkEndTime": 1445.972999572754,
+            "priority": "VeryHigh",
+            "transferSize": 666,
+            "rendererStartTime": 1353.6510000228882,
+            "sessionTargetType": "page",
+            "statusCode": 200,
+            "url": "https://kasa.rodolphe.mingo.qc.lu/app.css",
+            "resourceSize": 315
+          },
+          {
+            "mimeType": "image/png",
+            "experimentalFromMainFrame": true,
+            "priority": "High",
+            "transferSize": 1075,
+            "finished": true,
+            "rendererStartTime": 2665.576000213623,
+            "resourceSize": 201,
+            "statusCode": 200,
+            "resourceType": "Image",
+            "networkEndTime": 2692.9249997138977,
+            "sessionTargetType": "page",
+            "url": "https://cdn.datatables.net/1.10.21/images/sort_both.png",
+            "networkRequestTime": 2670.2419996261597,
+            "protocol": "h2",
+            "entity": "datatables.net"
+          },
+          {
+            "statusCode": 200,
+            "finished": true,
+            "networkRequestTime": 2689.9849996566772,
+            "entity": "datatables.net",
+            "resourceType": "Image",
+            "rendererStartTime": 2686.7960000038147,
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "protocol": "h2",
+            "networkEndTime": 2710.878999710083,
+            "sessionTargetType": "page",
+            "transferSize": 1036,
+            "mimeType": "image/png",
+            "url": "https://cdn.datatables.net/1.10.21/images/sort_asc.png",
+            "resourceSize": 160
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "valueType": "url",
+            "label": "URL",
+            "key": "url"
+          },
+          {
+            "label": "Protocol",
+            "key": "protocol",
+            "valueType": "text"
+          },
+          {
+            "key": "networkRequestTime",
+            "label": "Network Request Time",
+            "granularity": 1,
+            "valueType": "ms"
+          },
+          {
+            "granularity": 1,
+            "valueType": "ms",
+            "label": "Network End Time",
+            "key": "networkEndTime"
+          },
+          {
+            "valueType": "bytes",
+            "label": "Transfer Size",
+            "key": "transferSize",
+            "granularity": 1,
+            "displayUnit": "kb"
+          },
+          {
+            "valueType": "bytes",
+            "label": "Resource Size",
+            "displayUnit": "kb",
+            "granularity": 1,
+            "key": "resourceSize"
+          },
+          {
+            "key": "statusCode",
+            "valueType": "text",
+            "label": "Status Code"
+          },
+          {
+            "valueType": "text",
+            "label": "MIME Type",
+            "key": "mimeType"
+          },
+          {
+            "key": "resourceType",
+            "label": "Resource Type",
+            "valueType": "text"
+          }
+        ]
+      }
+    },
+    "font-display": {
+      "id": "font-display",
+      "title": "La totalité du texte reste visible pendant le chargement des polices Web",
+      "description": "Utilisez la fonctionnalité `font-display` CSS afin que le texte soit visible par l'utilisateur pendant le chargement des polices Web. [En savoir plus sur `font-display`](https://developer.chrome.com/docs/lighthouse/performance/font-display/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      },
+      "warnings": []
+    },
+    "aria-toggle-field-name": {
+      "id": "aria-toggle-field-name",
+      "title": "Les champs d'activation/de désactivation ARIA ont des noms accessibles",
+      "description": "Lorsqu'un champ d'activation/de désactivation n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [En savoir plus sur les champs d'activation/de désactivation](https://dequeuniversity.com/rules/axe/4.9/aria-toggle-field-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "canonical": {
+      "id": "canonical",
+      "title": "L'attribut `rel=canonical` du document est valide",
+      "description": "Les liens canoniques suggèrent l'URL à afficher dans les résultats de recherche. [En savoir plus sur les liens canoniques](https://developer.chrome.com/docs/lighthouse/seo/canonical/)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "network-server-latency": {
+      "id": "network-server-latency",
+      "title": "Latences du backend serveur",
+      "description": "La latence du serveur peut avoir une incidence sur les performances Web. Si la latence serveur d'une origine est élevée, cela signifie que le serveur est en surcharge ou que ses performances backend sont médiocres. [En savoir plus sur le temps de réponse du serveur](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "0 ms",
+      "details": {
+        "items": [
+          {
+            "serverResponseTime": 2,
+            "origin": "https://ajax.googleapis.com"
+          },
+          {
+            "serverResponseTime": 1,
+            "origin": "https://kasa.rodolphe.mingo.qc.lu"
+          },
+          {
+            "origin": "https://cdn.datatables.net",
+            "serverResponseTime": 1
+          }
+        ],
+        "headings": [
+          {
+            "valueType": "text",
+            "key": "origin",
+            "label": "URL"
+          },
+          {
+            "valueType": "ms",
+            "label": "Temps passé",
+            "key": "serverResponseTime",
+            "granularity": 1
+          }
+        ],
+        "sortedBy": [
+          "serverResponseTime"
+        ],
+        "type": "table"
+      },
+      "numericValue": 2,
+      "numericUnit": "millisecond"
+    },
+    "uses-responsive-images": {
+      "id": "uses-responsive-images",
+      "title": "Dimensionnez correctement les images",
+      "description": "Diffusez des images de taille appropriée afin d'économiser des données mobiles et de réduire le temps de chargement. [Découvrez comment dimensionner les images.](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        },
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "overallSavingsMs": 0,
+        "type": "opportunity",
+        "overallSavingsBytes": 0,
+        "headings": [],
+        "items": []
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "total-blocking-time": {
+      "id": "total-blocking-time",
+      "title": "Total Blocking Time",
+      "description": "Somme en millisecondes de toutes les périodes entre le FCP et le délai avant interactivité, lorsque la durée de la tâche a dépassé 50 ms. [En savoir plus sur la métrique \"Total Blocking Time\"](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/)",
+      "score": 0.97,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "110 ms",
+      "numericValue": 113,
+      "numericUnit": "millisecond"
+    },
+    "definition-list": {
+      "id": "definition-list",
+      "title": "Les éléments `<dl>` ne contiennent que des groupes `<dt>` et `<dd>` ainsi que des éléments `<script>`, `<template>` ou `<div>` dans le bon ordre.",
+      "description": "Si les listes de définition ne sont pas correctement balisées, les lecteurs d'écran risquent de donner des résultats confus ou imprécis. [Découvrez comment structurer correctement les listes de définition.](https://dequeuniversity.com/rules/axe/4.9/definition-list)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "structured-data": {
+      "id": "structured-data",
+      "title": "Les données structurées sont valides",
+      "description": "Exécutez l'[outil de test des données structurées](https://search.google.com/structured-data/testing-tool/) et le [validateur Lint de données structurées](http://linter.structured-data.org/) pour valider les données structurées. [En savoir plus sur les données structurées](https://developer.chrome.com/docs/lighthouse/seo/structured-data/)",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "first-meaningful-paint": {
+      "id": "first-meaningful-paint",
+      "title": "First Meaningful Paint",
+      "description": "\"First Meaningful Paint\" mesure quand le contenu principal d'une page est visible. [En savoir plus sur cette métrique](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint/)",
+      "score": 0.93,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "2,1 s",
+      "numericValue": 2138.7938260851333,
+      "numericUnit": "millisecond"
+    },
+    "frame-title": {
+      "id": "frame-title",
+      "title": "Les éléments `<frame>` ou `<iframe>` ont un titre",
+      "description": "Les lecteurs d'écran s'appuient sur le titre des frames pour décrire le contenu de ces derniers aux utilisateurs. [En savoir plus sur le titre des frames](https://dequeuniversity.com/rules/axe/4.9/frame-title)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-command-name": {
+      "id": "aria-command-name",
+      "title": "Les éléments `button`, `link` et `menuitem` ont des noms accessibles",
+      "description": "Lorsqu'un élément n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [Découvrez comment rendre les éléments de commande plus accessibles.](https://dequeuniversity.com/rules/axe/4.9/aria-command-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-allowed-attr": {
+      "id": "aria-allowed-attr",
+      "title": "Les attributs `[aria-*]` correspondent à leurs rôles",
+      "description": "Chaque `role` ARIA est rattaché à un sous-ensemble spécifique d'attributs `aria-*`. S'ils ne sont pas correctement associés, les attributs `aria-*` ne seront pas valides. [Découvrez comment rattacher les attributs ARIA à leurs rôles.](https://dequeuniversity.com/rules/axe/4.9/aria-allowed-attr)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [],
+        "headings": []
+      }
+    },
+    "unused-css-rules": {
+      "id": "unused-css-rules",
+      "title": "Réduisez les ressources CSS inutilisées",
+      "description": "Réduisez les règles inutilisées des feuilles de style et différez les ressources CSS non utilisées pour le contenu au-dessus de la ligne de flottaison afin de réduire la quantité d'octets consommés par l'activité réseau. [Découvrez comment réduire les ressources CSS non utilisées.](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "details": {
+        "items": [],
+        "type": "opportunity",
+        "headings": [],
+        "overallSavingsBytes": 0,
+        "overallSavingsMs": 0,
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          }
+        },
+        "sortedBy": [
+          "wastedBytes"
+        ]
+      },
+      "numericValue": 0,
+      "numericUnit": "millisecond"
+    },
+    "viewport": {
+      "id": "viewport",
+      "title": "Aucune balise `<meta name=\"viewport\">` ayant l'attribut `width` ou `initial-scale` n'est configurée",
+      "description": "Un `<meta name=\"viewport\">` optimise votre appli pour les tailles d'écrans de mobiles, mais empêche aussi un [délai d'entrée utilisateur de 300 millisecondes](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [En savoir plus sur l'utilisation de la balise Meta viewport](https://developer.chrome.com/docs/lighthouse/pwa/viewport/)",
+      "score": 0,
+      "scoreDisplayMode": "metricSavings",
+      "explanation": "Aucune balise `<meta name=\"viewport\">` trouvée"
+    },
+    "screenshot-thumbnails": {
+      "id": "screenshot-thumbnails",
+      "title": "Screenshot Thumbnails",
+      "description": "This is what the load of your site looked like.",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "scale": 3000,
+        "items": [
+          {
+            "timing": 375,
+            "timestamp": 2792326796228,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAIBAwYI/8QAHxABAQADAAEFAQAAAAAAAAAAAAISUpEBAwQxNHKx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APVIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnONp6ZxtPQUJzjaemcbT0FCc42npnG09BQnONp6ZxtPQUJzjaemcbT0FCc42npnG09BQnONp6ZxtPQUJzjaemcbT0FCc42npnG09BQnONp6ZxtPQUJzjaemcbT0FCc42npnG09BQnONp6ZxtPQUJzjaemcbT0FCc42npnG09BQx4ufPxU9ZBzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAANvtfs+l+/H9dAAP/Z"
+          },
+          {
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=",
+            "timestamp": 2792327171228,
+            "timing": 750
+          },
+          {
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=",
+            "timing": 1125,
+            "timestamp": 2792327546228
+          },
+          {
+            "timing": 1500,
+            "timestamp": 2792327921228,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k="
+          },
+          {
+            "timing": 1875,
+            "timestamp": 2792328296228,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k="
+          },
+          {
+            "timing": 2250,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=",
+            "timestamp": 2792328671228
+          },
+          {
+            "timestamp": 2792329046228,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHyAPoDASIAAhEBAxEB/8QAHAABAAEFAQEAAAAAAAAAAAAAAAcBAgMEBgUI/8QAKxABAAIBAwMEAQIHAAAAAAAAAAECAwQFEQYSIRQiMUETUYEHIzIzkaHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGhEBAQACAwAAAAAAAAAAAAAAAAECESEyQf/aAAwDAQACEQMRAD8A+qQAAAAAAAAAAch1Bj3O/Wm3fm9bPTvos0W9Ha9bRqu6nbN+ye7t7O/j65+foHXiM8u99b4dy1ei022c6bDlpjwZ8untebUnUYa91pi3umMNslp4+6/s2NTuvXGDUZ600mmy4Y3H0lL+kvH8n8MWjNMRaZms5fb4jxH+QSIIx0e8ddardMWLVaH0+iruGOLZMelmJnB+TU1nnm08+2mntzHH9c/Xxlyx1Bp+uOptVWu5ZdFXHS224uctsVssYfPERbs7Oe7mJ+Z7ePIJJEPZ+seutu0N9Tuu3YMGKIx1nJbR3iK3tk0teOO/z/dzxEfrjj976bv/ABBw6nVa2m1ZMmTLpsdYxXracUWrGrms1p3e2bzXTRb9O/z8eAl4Rxk6g6vtj1Xo9HotRGPcfSRnxUnJSuOcc275iszM9t5rjtx9xafH1saHe+ssu4aWNTtOGmmtr74M+OuO/fjxReYi8Wn22jt7bfP3P3HaDvwAAAAAAAAAAAAAAAAAAAAAAAAAGph3LR5qd+PU4pr4jnu4+YiY/wBTDbnzDwr9K7beebUtM8RHmK/EeI+m8Jhe9S78e1MYtRj4mKZMcz98THMT/wBXsGi0uPR6amDDz+Onxyzs3W+FUpStI4pWKxzM8RHHlUEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=",
+            "timing": 2625
+          },
+          {
+            "timing": 3000,
+            "data": "data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=",
+            "timestamp": 2792329421228
+          }
+        ],
+        "type": "filmstrip"
+      }
+    },
+    "is-crawlable": {
+      "id": "is-crawlable",
+      "title": "L'indexation de cette page n'est pas bloquée",
+      "description": "Les moteurs de recherche ne peuvent pas inclure vos pages dans les résultats de recherche s'ils ne sont pas autorisés à les explorer. [En savoir plus sur les instructions liées au robot d'exploration](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [],
+        "headings": [],
+        "type": "table"
+      },
+      "warnings": []
+    },
+    "js-libraries": {
+      "id": "js-libraries",
+      "title": "Bibliothèques JavaScript détectées",
+      "description": "Toutes les bibliothèques JavaScript frontales détectées sur la page. [En savoir plus sur cet audit de diagnostic lié à la détection de bibliothèques JavaScript](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "stacks": [
+            {
+              "id": "jquery",
+              "version": "3.5.1"
+            },
+            {
+              "id": "jquery-fast"
+            }
+          ]
+        },
+        "headings": [
+          {
+            "key": "name",
+            "label": "Nom",
+            "valueType": "text"
+          },
+          {
+            "valueType": "text",
+            "key": "version",
+            "label": "Version"
+          }
+        ],
+        "items": [
+          {
+            "version": "3.5.1",
+            "npm": "jquery",
+            "name": "jQuery"
+          }
+        ],
+        "type": "table"
+      }
+    },
+    "listitem": {
+      "id": "listitem",
+      "title": "Les éléments de liste (`<li>`) sont inclus dans des éléments parents `<ul>`, `<ol>` ou `<menu>`",
+      "description": "Les lecteurs d'écran requièrent que les éléments de liste (`<li>`) soient contenus dans un élément parent `<ul>`, `<ol>` ou `<menu>` pour les énoncer correctement. [En savoir plus sur la bonne structuration des listes](https://dequeuniversity.com/rules/axe/4.9/listitem)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "lcp-lazy-loaded": {
+      "id": "lcp-lazy-loaded",
+      "title": "L'image Largest Contentful Paint n'a pas eu de chargement différé",
+      "description": "Les images de la partie au-dessus de la ligne de flottaison qui ont un chargement différé sont rendues plus tard dans le cycle de vie de la page, ce qui peut retarder Largest Contentful Paint. [En savoir plus sur le chargement différé optimal](https://web.dev/articles/lcp-lazy-loading)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "deprecations": {
+      "id": "deprecations",
+      "title": "La page n'utilise pas d'API obsolètes",
+      "description": "Les API obsolètes seront finalement supprimées du navigateur. [En savoir plus sur les API obsolètes](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "type": "table",
+        "items": []
+      }
+    },
+    "label-content-name-mismatch": {
+      "id": "label-content-name-mismatch",
+      "title": "Les éléments accompagnés de libellés de texte visibles sont associés à des noms accessibles.",
+      "description": "Les libellés de texte visibles qui ne correspondent pas au nom accessible peuvent nuire à l'expérience des utilisateurs de lecteur d'écran. [En savoir plus sur les noms accessibles](https://dequeuniversity.com/rules/axe/4.9/label-content-name-mismatch)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "largest-contentful-paint-element": {
+      "id": "largest-contentful-paint-element",
+      "title": "Élément identifié comme \"Largest Contentful Paint\"",
+      "description": "Il s'agit de l'élément identifié comme \"Largest Contentful Paint\" dans la fenêtre d'affichage. [En savoir plus cette métrique](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+      "score": 1,
+      "scoreDisplayMode": "informative",
+      "displayValue": "2 140 ms",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "headings": [
+              {
+                "valueType": "node",
+                "key": "node",
+                "label": "Élément"
+              }
+            ],
+            "type": "table",
+            "items": [
+              {
+                "node": {
+                  "nodeLabel": "Current Employees",
+                  "boundingRect": {
+                    "top": 29,
+                    "right": 623,
+                    "height": 37,
+                    "bottom": 66,
+                    "left": 357,
+                    "width": 267
+                  },
+                  "snippet": "<h1>",
+                  "lhId": "page-0-H1",
+                  "path": "0,HTML,1,BODY,0,DIV,0,H1",
+                  "selector": "body > div#employee-div > h1",
+                  "type": "node"
+                }
+              }
+            ]
+          },
+          {
+            "headings": [
+              {
+                "valueType": "text",
+                "label": "Phase",
+                "key": "phase"
+              },
+              {
+                "valueType": "text",
+                "key": "percent",
+                "label": "% du LCP"
+              },
+              {
+                "valueType": "ms",
+                "label": "Durée",
+                "key": "timing"
+              }
+            ],
+            "type": "table",
+            "items": [
+              {
+                "timing": 601,
+                "phase": "TTFB",
+                "percent": "28%"
+              },
+              {
+                "phase": "Délai de chargement",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "percent": "0%",
+                "timing": 0,
+                "phase": "Temps de chargement"
+              },
+              {
+                "timing": 1537.7938260851333,
+                "percent": "72%",
+                "phase": "Délai de rendu"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "doctype": {
+      "id": "doctype",
+      "title": "La page n'a pas d'attribut doctype HTML, ce qui déclenche le mode quirks",
+      "description": "La spécification d'un attribut doctype empêche le navigateur de passer en mode quirks. [En savoir plus sur la déclaration d'un attribut doctype](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/)",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "explanation": "Le document doit contenir un attribut doctype"
+    },
+    "document-title": {
+      "id": "document-title",
+      "title": "Le document contient un élément `<title>`",
+      "description": "Le titre donne aux utilisateurs de lecteurs d'écran un aperçu de la page. En outre, les moteurs de recherche s'appuient principalement sur ce dernier pour déterminer la pertinence du contenu proposé. [En savoir plus sur le titre des documents](https://dequeuniversity.com/rules/axe/4.9/document-title)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "list": {
+      "id": "list",
+      "title": "Les listes contiennent uniquement des éléments `<li>` et des éléments de type script (`<script>` et `<template>`).",
+      "description": "Les lecteurs d'écran ont une façon spécifique d'énoncer les listes. Pour leur permettre de donner de bons résultats, pensez à bien structurer ces dernières. [En savoir plus sur la bonne structuration des listes](https://dequeuniversity.com/rules/axe/4.9/list)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "color-contrast": {
+      "id": "color-contrast",
+      "title": "Les couleurs d'arrière-plan et de premier plan sont suffisamment contrastées",
+      "description": "Un texte faiblement contrasté est difficile, voire impossible à lire pour de nombreux utilisateurs. [Découvrez comment fournir un contraste suffisant des couleurs.](https://dequeuniversity.com/rules/axe/4.9/color-contrast)",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [],
+        "items": [],
+        "type": "table"
+      }
+    },
+    "robots-txt": {
+      "id": "robots-txt",
+      "title": "Le fichier robots.txt est valide",
+      "description": "Si votre fichier robots.txt n'est pas créé correctement, il se peut que les robots d'exploration ne puissent pas comprendre comment votre site Web doit être exploré ou indexé. [En savoir plus sur les fichiers robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "form-field-multiple-labels": {
+      "id": "form-field-multiple-labels",
+      "title": "Aucun champ de formulaire ne comporte plusieurs libellés",
+      "description": "Les champs de formulaire comprenant plusieurs libellés peuvent être annoncés par les technologies d'assistance comme des lecteurs d'écran utilisant le premier, le dernier ou tous les libellés, ce qui peut prêter à confusion. [Découvrez comment utiliser les libellés de formulaires.](https://dequeuniversity.com/rules/axe/4.9/form-field-multiple-labels)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-input-field-name": {
+      "id": "aria-input-field-name",
+      "title": "Les champs de saisie ARIA ont des noms accessibles",
+      "description": "Lorsqu'un champ de saisie n'a pas de nom accessible, les lecteurs d'écran l'annoncent avec un nom générique, ce qui le rend inutilisable pour les personnes qui se servent de tels outils. [En savoir plus sur le libellé des champs de saisie](https://dequeuniversity.com/rules/axe/4.9/aria-input-field-name)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "render-blocking-resources": {
+      "id": "render-blocking-resources",
+      "title": "Éliminez les ressources qui bloquent le rendu",
+      "description": "Des ressources bloquent la première visualisation (first paint) de votre page. Envisagez de diffuser des feuilles JS/CSS essentielles en ligne et de différer la diffusion de toutes les feuilles JS/de style non essentielles. [Découvrez comment éliminer les ressources qui bloquent l'affichage.](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/)",
+      "score": 0,
+      "scoreDisplayMode": "metricSavings",
+      "displayValue": "Économies potentielles de 1 150 ms",
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "wastedMs": 1052,
+            "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+            "totalBytes": 90531
+          },
+          {
+            "totalBytes": 85608,
+            "wastedMs": 300,
+            "url": "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"
+          },
+          {
+            "url": "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css",
+            "wastedMs": 751,
+            "totalBytes": 14836
+          }
+        ],
+        "overallSavingsMs": 1149,
+        "headings": [
+          {
+            "valueType": "url",
+            "key": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "label": "Taille de transfert",
+            "valueType": "bytes"
+          },
+          {
+            "label": "Économies potentielles",
+            "valueType": "timespanMs",
+            "key": "wastedMs"
+          }
+        ]
+      },
+      "numericValue": 1149,
+      "numericUnit": "millisecond"
+    },
+    "accesskeys": {
+      "id": "accesskeys",
+      "title": "Les valeurs `[accesskey]` sont uniques",
+      "description": "Les clés d'accès permettent aux utilisateurs de positionner rapidement le curseur dans une partie spécifique de la page. Pour les aider à naviguer correctement, pensez à définir des clés d'accès uniques. [En savoir plus sur les clés d'accès](https://dequeuniversity.com/rules/axe/4.9/accesskeys)",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    }
+  },
+  "categories": {
+    "performance": {
+      "id": "performance",
+      "title": "Performances",
+      "score": 0.93,
+      "auditRefs": [
+        {
+          "id": "first-contentful-paint",
+          "weight": 10,
+          "group": "metrics",
+          "acronym": "FCP"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "weight": 25,
+          "group": "metrics",
+          "acronym": "LCP"
+        },
+        {
+          "id": "total-blocking-time",
+          "weight": 30,
+          "group": "metrics",
+          "acronym": "TBT"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "weight": 25,
+          "group": "metrics",
+          "acronym": "CLS"
+        },
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "group": "metrics",
+          "acronym": "SI"
+        },
+        {
+          "id": "interactive",
+          "weight": 0,
+          "group": "hidden",
+          "acronym": "TTI"
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "first-meaningful-paint",
+          "weight": 0,
+          "group": "hidden",
+          "acronym": "FMP"
+        },
+        {
+          "id": "render-blocking-resources",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-responsive-images",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "offscreen-images",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "unminified-css",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "unused-css-rules",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "unused-javascript",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-optimized-images",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "modern-image-formats",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-text-compression",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-rel-preconnect",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "redirects",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "efficient-animated-content",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "duplicated-javascript",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "legacy-javascript",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "total-byte-weight",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "dom-size",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "critical-request-chains",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "user-timings",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "bootup-time",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "font-display",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "third-party-summary",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "third-party-facades",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "layout-shifts",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-passive-event-listeners",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "no-document-write",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "long-tasks",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "non-composited-animations",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "unsized-images",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "viewport",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "network-requests",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "network-rtt",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "network-server-latency",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "main-thread-tasks",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "diagnostics",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "metrics",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "screenshot-thumbnails",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "final-screenshot",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "script-treemap-data",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "resource-summary",
+          "weight": 0,
+          "group": "hidden"
+        }
+      ]
+    },
+    "accessibility": {
+      "id": "accessibility",
+      "title": "Accessibilité",
+      "description": "Ces vérifications permettent de connaître les possibilités d'[amélioration de l'accessibilité de votre application Web](https://developer.chrome.com/docs/lighthouse/accessibility/). La détection automatique ne peut détecter qu'une partie des problèmes et ne garantit pas l'accessibilité de votre application Web. Il est donc conseillé d'effectuer également un [test manuel](https://web.dev/articles/how-to-review).",
+      "score": 0.96,
+      "manualDescription": "Ces éléments concernent des zones qu'un outil de test automatique ne peut pas couvrir. Consultez notre guide sur la [réalisation d'un examen d'accessibilité](https://web.dev/articles/how-to-review).",
+      "auditRefs": [
+        {
+          "id": "accesskeys",
+          "weight": 0,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "aria-allowed-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-allowed-role",
+          "weight": 1,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-command-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-conditional-attr",
+          "weight": 7,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-deprecated-role",
+          "weight": 1,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-dialog-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-hidden-body",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-hidden-focus",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-input-field-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-meter-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-progressbar-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "weight": 7,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-children",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-parent",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-roles",
+          "weight": 7,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-text",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-toggle-field-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-tooltip-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-treeitem-name",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "button-name",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "bypass",
+          "weight": 0,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "color-contrast",
+          "weight": 7,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "definition-list",
+          "weight": 0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "dlitem",
+          "weight": 0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "document-title",
+          "weight": 7,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "duplicate-id-aria",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "frame-title",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "heading-order",
+          "weight": 3,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "html-has-lang",
+          "weight": 7,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-lang-valid",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-xml-lang-mismatch",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "image-alt",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "image-redundant-alt",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "input-button-name",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "input-image-alt",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "label",
+          "weight": 7,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "link-in-text-block",
+          "weight": 0,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "link-name",
+          "weight": 7,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "list",
+          "weight": 0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "listitem",
+          "weight": 0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "meta-refresh",
+          "weight": 0,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "meta-viewport",
+          "weight": 0,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "object-alt",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "select-name",
+          "weight": 7,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "skip-link",
+          "weight": 0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "tabindex",
+          "weight": 7,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "table-duplicate-name",
+          "weight": 1,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "target-size",
+          "weight": 7,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "td-headers-attr",
+          "weight": 7,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "th-has-data-cells",
+          "weight": 0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "valid-lang",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "video-caption",
+          "weight": 0,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "focusable-controls",
+          "weight": 0
+        },
+        {
+          "id": "interactive-element-affordance",
+          "weight": 0
+        },
+        {
+          "id": "logical-tab-order",
+          "weight": 0
+        },
+        {
+          "id": "visual-order-follows-dom",
+          "weight": 0
+        },
+        {
+          "id": "focus-traps",
+          "weight": 0
+        },
+        {
+          "id": "managed-focus",
+          "weight": 0
+        },
+        {
+          "id": "use-landmarks",
+          "weight": 0
+        },
+        {
+          "id": "offscreen-content-hidden",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-labels",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-roles",
+          "weight": 0
+        },
+        {
+          "id": "empty-heading",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "identical-links-same-purpose",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "landmark-one-main",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "table-fake-caption",
+          "weight": 0,
+          "group": "hidden"
+        },
+        {
+          "id": "td-has-header",
+          "weight": 0,
+          "group": "hidden"
+        }
+      ]
+    },
+    "best-practices": {
+      "id": "best-practices",
+      "title": "Bonnes pratiques",
+      "score": 0.86,
+      "auditRefs": [
+        {
+          "id": "is-on-https",
+          "weight": 5,
+          "group": "best-practices-trust-safety"
+        },
+        {
+          "id": "redirects-http",
+          "weight": 0,
+          "group": "best-practices-trust-safety"
+        },
+        {
+          "id": "geolocation-on-start",
+          "weight": 1,
+          "group": "best-practices-trust-safety"
+        },
+        {
+          "id": "notification-on-start",
+          "weight": 1,
+          "group": "best-practices-trust-safety"
+        },
+        {
+          "id": "csp-xss",
+          "weight": 0,
+          "group": "best-practices-trust-safety"
+        },
+        {
+          "id": "paste-preventing-inputs",
+          "weight": 3,
+          "group": "best-practices-ux"
+        },
+        {
+          "id": "image-aspect-ratio",
+          "weight": 1,
+          "group": "best-practices-ux"
+        },
+        {
+          "id": "image-size-responsive",
+          "weight": 1,
+          "group": "best-practices-ux"
+        },
+        {
+          "id": "viewport",
+          "weight": 1,
+          "group": "best-practices-ux"
+        },
+        {
+          "id": "font-size",
+          "weight": 1,
+          "group": "best-practices-ux"
+        },
+        {
+          "id": "doctype",
+          "weight": 1,
+          "group": "best-practices-browser-compat"
+        },
+        {
+          "id": "charset",
+          "weight": 1,
+          "group": "best-practices-browser-compat"
+        },
+        {
+          "id": "js-libraries",
+          "weight": 0,
+          "group": "best-practices-general"
+        },
+        {
+          "id": "deprecations",
+          "weight": 5,
+          "group": "best-practices-general"
+        },
+        {
+          "id": "third-party-cookies",
+          "weight": 5,
+          "group": "best-practices-general"
+        },
+        {
+          "id": "errors-in-console",
+          "weight": 1,
+          "group": "best-practices-general"
+        },
+        {
+          "id": "valid-source-maps",
+          "weight": 0,
+          "group": "best-practices-general"
+        },
+        {
+          "id": "inspector-issues",
+          "weight": 1,
+          "group": "best-practices-general"
+        }
+      ]
+    },
+    "seo": {
+      "id": "seo",
+      "title": "SEO",
+      "description": "Ces vérifications garantissent que votre page suit les conseils de base concernant le référencement naturel. De nombreux facteurs supplémentaires ne sont pas évalués par Lighthouse ici, mais peuvent affecter votre classement dans les résultats de recherche, y compris vos performances concernant les [Core Web Vitals](https://web.dev/explore/vitals). [En savoir plus sur les Essentiels de la recherche Google](https://support.google.com/webmasters/answer/35769)",
+      "score": 0.9,
+      "manualDescription": "Exécutez ces outils de validation supplémentaires sur votre site pour vérifier les bonnes pratiques de SEO complémentaires.",
+      "auditRefs": [
+        {
+          "id": "is-crawlable",
+          "weight": 4.043478260869565,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "document-title",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "http-status-code",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "link-text",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "crawlable-anchors",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "robots-txt",
+          "weight": 0,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "image-alt",
+          "weight": 0,
+          "group": "seo-content"
+        },
+        {
+          "id": "hreflang",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "canonical",
+          "weight": 0,
+          "group": "seo-content"
+        },
+        {
+          "id": "structured-data",
+          "weight": 0
+        }
+      ]
+    }
+  },
+  "categoryGroups": {
+    "best-practices-trust-safety": {
+      "title": "Fiabilité et sécurité"
+    },
+    "a11y-language": {
+      "title": "Internationalisation et localisation",
+      "description": "Servez-vous de ces indications pour améliorer l'interprétation de votre contenu en fonction des différents paramètres régionaux choisis par les utilisateurs."
+    },
+    "seo-mobile": {
+      "title": "Adapté aux mobiles",
+      "description": "Assurez-vous que vos pages sont adaptées aux mobiles, afin que les utilisateurs n'aient pas besoin de pincer l'écran ni de zoomer pour lire votre contenu. [Découvrez comment adapter vos pages aux mobiles.](https://developers.google.com/search/mobile-sites/)"
+    },
+    "a11y-aria": {
+      "title": "ARIA",
+      "description": "Servez-vous de ces indications pour améliorer l'utilisation des éléments ARIA dans votre application et ainsi optimiser l'expérience des utilisateurs de technologies d'assistance, comme les lecteurs d'écran."
+    },
+    "best-practices-ux": {
+      "title": "Expérience utilisateur"
+    },
+    "diagnostics": {
+      "title": "Diagnostic",
+      "description": "Plus d'informations sur les performances de votre application. Ces chiffres n'ont pas d'[incidence directe](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) sur le score lié aux performances."
+    },
+    "a11y-best-practices": {
+      "title": "Bonnes pratiques",
+      "description": "Ces indications présentent les bonnes pratiques courantes en matière d'accessibilité."
+    },
+    "best-practices-general": {
+      "title": "Général"
+    },
+    "seo-content": {
+      "title": "Bonnes pratiques relatives au contenu",
+      "description": "Rédigez votre code HTML de sorte à autoriser les robots d'exploration à analyser le contenu de votre application."
+    },
+    "a11y-tables-lists": {
+      "title": "Tableaux et listes",
+      "description": "Servez-vous de ces indications pour améliorer l'expérience de lecture des listes ou tableaux de données en utilisant une technologie d'assistance, comme un lecteur d'écran."
+    },
+    "a11y-navigation": {
+      "title": "Navigation",
+      "description": "Servez-vous de ces indications pour améliorer la navigation au clavier de votre application."
+    },
+    "best-practices-browser-compat": {
+      "title": "Compatibilité du navigateur"
+    },
+    "a11y-audio-video": {
+      "title": "Audio et vidéo",
+      "description": "Servez-vous de ces indications pour fournir un contenu alternatif pour l'audio et la vidéo. Vous pourrez ainsi améliorer l'expérience des utilisateurs malvoyants ou malentendants."
+    },
+    "a11y-names-labels": {
+      "title": "Noms et étiquettes",
+      "description": "Servez-vous de ces indications pour améliorer la sémantique des éléments de contrôle de votre application. Vous optimiserez ainsi l'expérience des utilisateurs de technologies d'assistance, comme les lecteurs d'écran."
+    },
+    "a11y-color-contrast": {
+      "title": "Contraste",
+      "description": "Servez-vous de ces indications pour améliorer la lisibilité de votre contenu."
+    },
+    "seo-crawl": {
+      "title": "Exploration et indexation",
+      "description": "Pour que votre contenu apparaisse dans les résultats de recherche, les robots d'exploration doivent accéder à votre application."
+    },
+    "metrics": {
+      "title": "Statistiques"
+    }
+  },
+  "timing": {
+    "total": 11297.4
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "varianceDisclaimer": "Les valeurs sont estimées et peuvent varier. Le [calcul du score lié aux performances](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) repose directement sur ces statistiques.",
+      "opportunityResourceColumnLabel": "Opportunité",
+      "opportunitySavingsColumnLabel": "Estimation des économies",
+      "errorMissingAuditInfo": "Erreur de rapport : pas d'information d'audit",
+      "errorLabel": "Erreur",
+      "warningHeader": "Avertissements : ",
+      "passedAuditsGroupTitle": "Audits réussis",
+      "notApplicableAuditsGroupTitle": "Non applicable",
+      "manualAuditsGroupTitle": "Autres éléments à vérifier manuellement",
+      "toplevelWarningsMessage": "Cette exécution de Lighthouse a rencontré des problèmes :",
+      "crcLongestDurationLabel": "Latence de chemin d'accès critique maximale :",
+      "crcInitialNavigation": "Navigation initiale",
+      "lsPerformanceCategoryDescription": "Analyse [Lighthouse](https://developers.google.com/web/tools/lighthouse/) de la page actuelle sur un réseau mobile émulé. Les valeurs sont estimées et peuvent varier.",
+      "labDataTitle": "Données de test",
+      "warningAuditsGroupTitle": "Réussite des audits, mais avec des avertissements",
+      "snippetExpandButtonLabel": "Développer l'extrait",
+      "snippetCollapseButtonLabel": "Réduire l'extrait",
+      "thirdPartyResourcesLabel": "Afficher les ressources tierces",
+      "runtimeDesktopEmulation": "Émulation (ordinateur)",
+      "runtimeMobileEmulation": "Émulation du Moto G Power",
+      "runtimeNoEmulation": "Aucune émulation",
+      "runtimeSettingsBenchmark": "Puissance du processeur/de la mémoire non limitée",
+      "runtimeSettingsCPUThrottling": "Limitation du processeur",
+      "runtimeSettingsDevice": "Appareil",
+      "runtimeSettingsNetworkThrottling": "Limitation de bande passante réseau",
+      "runtimeSettingsUANetwork": "User-agent (réseau)",
+      "runtimeUnknown": "Inconnu",
+      "dropdownCopyJSON": "Copier l'objet JSON",
+      "dropdownDarkTheme": "Activer/Désactiver le thème sombre",
+      "dropdownPrintExpanded": "Imprimer la version complète",
+      "dropdownPrintSummary": "Imprimer le résumé",
+      "dropdownSaveGist": "Enregistrer en tant que Gist",
+      "dropdownSaveHTML": "Enregistrer au format HTML",
+      "dropdownSaveJSON": "Enregistrer au format JSON",
+      "dropdownViewer": "Ouvrir dans la visionneuse",
+      "footerIssue": "Signaler un problème",
+      "throttlingProvided": "Limitation fournie par l'environnement",
+      "calculatorLink": "Affichez la calculatrice.",
+      "runtimeSettingsAxeVersion": "Version d'axe",
+      "viewTreemapLabel": "Consultez la carte proportionnelle",
+      "showRelevantAudits": "Afficher les audits pertinents pour :"
+    }
+  },
+  "entities": [
+    {
+      "name": "qc.lu",
+      "isFirstParty": true,
+      "isUnrecognized": true,
+      "origins": [
+        "https://kasa.rodolphe.mingo.qc.lu"
+      ]
+    },
+    {
+      "name": "Google CDN",
+      "homepage": "https://developers.google.com/speed/libraries/",
+      "category": "cdn",
+      "origins": [
+        "https://ajax.googleapis.com"
+      ]
+    },
+    {
+      "name": "datatables.net",
+      "isUnrecognized": true,
+      "origins": [
+        "https://cdn.datatables.net"
+      ]
+    }
+  ],
+  "fullPageScreenshot": {
+    "nodes": {
+      "1-17-TH": {
+        "height": 39,
+        "right": 834,
+        "left": 763,
+        "width": 71,
+        "bottom": 174,
+        "top": 135
+      },
+      "page-0-H1": {
+        "bottom": 66,
+        "width": 267,
+        "left": 357,
+        "height": 37,
+        "right": 623,
+        "top": 29
+      },
+      "1-7-LABEL": {
+        "right": 179,
+        "width": 132,
+        "top": 104,
+        "bottom": 123,
+        "left": 47,
+        "height": 19
+      },
+      "1-6-TR": {
+        "bottom": 174,
+        "height": 39,
+        "right": 933,
+        "top": 135,
+        "width": 886,
+        "left": 47
+      },
+      "1-20-LINK": {
+        "height": 0,
+        "left": 0,
+        "width": 0,
+        "top": 0,
+        "bottom": 0,
+        "right": 0
+      },
+      "1-11-TH": {
+        "top": 135,
+        "height": 39,
+        "left": 160,
+        "width": 110,
+        "right": 270,
+        "bottom": 174
+      },
+      "1-15-TH": {
+        "height": 39,
+        "width": 77,
+        "left": 621,
+        "top": 135,
+        "bottom": 174,
+        "right": 698
+      },
+      "1-16-TH": {
+        "height": 39,
+        "right": 763,
+        "left": 698,
+        "bottom": 174,
+        "top": 135,
+        "width": 65
+      },
+      "1-2-A": {
+        "top": 213,
+        "bottom": 249,
+        "id": "employee-table_previous",
+        "right": 866,
+        "left": 776,
+        "width": 90,
+        "height": 36
+      },
+      "1-12-TH": {
+        "top": 135,
+        "bottom": 174,
+        "left": 270,
+        "height": 39,
+        "width": 107,
+        "right": 377
+      },
+      "1-8-LABEL": {
+        "right": 933,
+        "left": 720,
+        "height": 21,
+        "width": 213,
+        "bottom": 125,
+        "top": 104
+      },
+      "1-5-OPTION": {
+        "right": 0,
+        "left": 0,
+        "top": 0,
+        "width": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "1-14-TH": {
+        "top": 135,
+        "width": 126,
+        "height": 39,
+        "bottom": 174,
+        "right": 621,
+        "left": 495
+      },
+      "1-9-SELECT": {
+        "right": 132,
+        "width": 45,
+        "left": 87,
+        "height": 19,
+        "bottom": 123,
+        "top": 104
+      },
+      "1-13-TH": {
+        "right": 495,
+        "left": 377,
+        "top": 135,
+        "width": 119,
+        "height": 39,
+        "bottom": 174
+      },
+      "1-19-LINK": {
+        "width": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "height": 0,
+        "top": 0
+      },
+      "1-0-HTML": {
+        "right": 980,
+        "width": 980,
+        "bottom": 1957,
+        "left": 0,
+        "top": 0,
+        "height": 1957
+      },
+      "page-1-A": {
+        "bottom": 267,
+        "right": 510,
+        "left": 470,
+        "height": 18,
+        "top": 249,
+        "width": 39
+      },
+      "1-18-TH": {
+        "right": 933,
+        "width": 100,
+        "bottom": 174,
+        "top": 135,
+        "left": 834,
+        "height": 39
+      },
+      "1-3-A": {
+        "left": 868,
+        "right": 933,
+        "top": 213,
+        "width": 65,
+        "bottom": 249,
+        "height": 36,
+        "id": "employee-table_next"
+      },
+      "1-10-INPUT": {
+        "top": 104,
+        "bottom": 125,
+        "width": 158,
+        "right": 933,
+        "height": 21,
+        "left": 775
+      },
+      "1-4-A": {
+        "height": 18,
+        "right": 510,
+        "top": 249,
+        "bottom": 267,
+        "width": 39,
+        "left": 470
+      },
+      "1-1-TH": {
+        "left": 47,
+        "right": 160,
+        "height": 39,
+        "bottom": 174,
+        "top": 135,
+        "width": 113
+      }
+    },
+    "screenshot": {
+      "data": "data:image/webp;base64,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",
+      "width": 980.0000610351562,
+      "height": 1957.6214599609375
+    }
+  }
+}
